@@ -1,0 +1,144 @@
+/*webapp color scheme*/
+:root {
+    --dark: black;
+    --light: #e3e8ec;
+    --primary: #5d666b;
+    --secondary: #2b4c5d;
+}
+
+body {
+    background-color: var(--light);
+    color: var(--secondary);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark);
+    height: 5rem;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 1.75rem;
+    padding: 0 1% 0 2%;
+    font-weight: lighter;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: var(--light);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    color: var(--light);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: lighter;
+    padding: 0 1rem;
+    margin-right: 1%;
+}
+
+/*aligning anchors to the right margin */
+nav div {
+    margin-right: 3%;
+}
+
+/*changing the color of the link when hovered over*/
+nav a:hover,
+header h1 a:hover {
+    color: var(--primary);
+}
+
+/*socials in a seperate container so i can style easier for mediabreaks*/
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    color: var(--light);
+    font-size: 1rem;
+    margin-left: 4rem;
+    padding: 0;
+}
+
+.socials a:hover {
+    cursor: pointer;
+}
+
+.hero-banner {
+    background-image: url("/Users/patricksara/Desktop/BootCamp/patricktheodore-week-2-homework/assets/images/wallpaperflare.com_wallpaper.jpg");
+    background-color: var(--primary);
+    background-size: cover;
+    background-position: center;
+    min-height: 75vh;
+    padding: 2% 6%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-right: auto;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.hero-banner div a {
+    color: var(--light);
+}
+
+.hero-banner div a:hover {
+    color: var(--primary);
+}
+
+.primary-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+.page-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.page-content h2 {
+    flex: 0 0 20%;
+    font-size: 7.5rem;
+    letter-spacing: -0.4rem;
+    color: var(--dark);
+}
+
+.page-content h3 {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: var(--primary);
+}
+
+#about {
+    justify-content: flex-start;
+    margin: 2% 2% 2% 5%;
+    max-width: 50%;
+    border-bottom: 1px solid var(--dark);
+}
+
+#about p {
+    padding: 2rem 0;
+    color: var(--dark);
+}
+
+
+
+
+
+
+
