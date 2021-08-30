@@ -3,7 +3,7 @@
     --dark: black;
     --light: #e3e8ec;
     --primary: #5d666b;
-    --secondary: #2b4c5d;
+    --secondary: #a7a7a7;
 }
 
 body {
@@ -22,6 +22,12 @@ header {
     width: 100%;
 }
 
+main {
+    max-width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 header h1 {
     font-size: 1.75rem;
     padding: 0 1% 0 2%;
@@ -38,6 +44,7 @@ nav {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    width: 70%;
 }
 
 nav a {
@@ -98,21 +105,37 @@ header h1 a:hover {
     color: var(--primary);
 }
 
+
+/*here starts my styling for the content
+try putting all content including image in a container, flex-direction: row. then inside 
+the container, have a seperate container for text and image. text flex-direction: col. then just
+outside the text flex container, the image should still fit inside the large of the containers.*/
 .primary-content {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
+}
 
+.about {
+    border-bottom: 1px solid var(--primary);
 }
 
 .page-content {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    align-items: stretch;
+}
+
+.text {
+    margin: 5% 5% 5% 0;
 }
 
 .page-content h2 {
-    flex: 0 0 20%;
     font-size: 7.5rem;
     letter-spacing: -0.4rem;
     color: var(--dark);
@@ -124,19 +147,136 @@ header h1 a:hover {
     color: var(--primary);
 }
 
-#about {
+.about-text,
+.portfolio-text {
+    display: flex;
+    flex-direction: column;
     justify-content: flex-start;
-    margin: 2% 2% 2% 5%;
     max-width: 50%;
-    border-bottom: 1px solid var(--dark);
 }
 
-#about p {
+.about-text p,
+.portfolio-text p {
     padding: 2rem 0;
     color: var(--dark);
 }
 
+#about-image {
+    border-radius: 50%;
+    width: 30%;
+    height: 30%;
+    flex-shrink: 2;
+    display: block;
+    align-self: center;
+}
 
+/*main flex portfolio items*/
+.portfolio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.featured {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5%;
+    margin-top: 5%;
+    border-bottom: 1px solid var(--primary);
+}
+
+.scratch {
+    max-width: 40%;
+    margin: 0 5% 2% 0;
+    background: var(--light);
+    padding: 1%;
+    display: block;
+    box-shadow: 0 1px 4px 0 var(--primary);
+    border-radius: 4px;
+}
+
+.scratch a {
+    text-decoration: none;
+    display: inline;
+    color: var(--primary);
+}
+
+.scratch a img {
+    display: block;
+    position: relative;
+    width: 100%;
+    border-radius: 4px;
+}
+
+#thumbs {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    list-style: none;
+    padding: 0 0 5% 0;
+    max-width: 100%;
+    margin-top: 5%;
+    border-bottom: 1px solid var(--primary);
+}
+
+#thumbs li {
+    float: left;
+    width: 25%;
+    margin: 0 5% 2% 0;
+    background: var(--light);
+    padding: 1%;
+    display: block;
+    box-shadow: 0 1px 4px 0 var(--primary);
+    border-radius: 4px;
+    flex: 1;
+}
+
+#thumbs li a {
+    text-decoration: none;
+    display: inline;
+    color: var(--primary);
+}
+
+#thumbs li a img {
+    display: block;
+    position: relative;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.description {
+    padding: 0 0 0 0.25rem;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 100%;
+}
+
+.description div {
+    min-width: 90%;
+    max-width: 90%;
+}
+
+.fas {
+    justify-self: flex-end;
+    align-self: center;
+    display: none;
+}
+
+a:hover .fas {
+    display: block;
+}
+
+#contact {
+    display: inline-block;
+}
 
 
 
