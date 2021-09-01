@@ -1,3 +1,7 @@
+/*need to add flex: 1 1 0 400px for example, grown shrink, basis, to make responsive design*/
+
+
+
 /*webapp color scheme*/
 :root {
     --dark: black;
@@ -47,7 +51,16 @@ nav {
     width: 70%;
 }
 
-nav a {
+.quick-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.quick-links li a {
     color: var(--light);
     text-decoration: none;
     font-size: 1rem;
@@ -56,14 +69,16 @@ nav a {
     margin-right: 1%;
 }
 
+
 /*aligning anchors to the right margin */
 nav div {
     margin-right: 3%;
 }
 
 /*changing the color of the link when hovered over*/
-nav a:hover,
-header h1 a:hover {
+.quick-links li a:hover,
+header h1 a:hover,
+.socials a:hover {
     color: var(--primary);
 }
 
@@ -71,11 +86,18 @@ header h1 a:hover {
 .socials {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
     color: var(--light);
     font-size: 1rem;
-    margin-left: 4rem;
-    padding: 0;
+}
+
+.socials a {
+    color: var(--light);
+    text-decoration: none;
+    font-weight: lighter;
+    padding: 0 1rem;
+    margin-right: 1%; 
 }
 
 .socials a:hover {
@@ -125,10 +147,10 @@ outside the text flex container, the image should still fit inside the large of 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 90%;
     margin: auto;
-    align-items: stretch;
+    align-items: center;
 }
 
 .text {
@@ -147,16 +169,14 @@ outside the text flex container, the image should still fit inside the large of 
     color: var(--primary);
 }
 
-.about-text,
-.portfolio-text {
+.text {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     max-width: 50%;
 }
 
-.about-text p,
-.portfolio-text p {
+.text p {
     padding: 2rem 0;
     color: var(--dark);
 }
@@ -274,11 +294,171 @@ a:hover .fas {
     display: block;
 }
 
-#contact {
-    display: inline-block;
+.contact-form {
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: var(--primary);
+    max-width: 100%;
+    width: 40%;
+    margin-top: 4rem;
 }
 
+#contact-form {
+    width: 100%;
+}
 
+.text-input {
+    width: 100%;
+    max-width: 100%;
+    padding: 0.5rem;
+    outline: none;
+    border: 1px solid var(--dark);
+    border-radius: 4px;
+    margin-bottom: 4%;
+}
 
+input[type="text"] { 
+    font-size: 1rem; 
+    font-family: "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    color: var(--dark);
+    font-weight: lighter;
+}
 
+button {
+    background-color: var(--dark);
+    color: var(--light);
+    cursor: pointer;
+    border: solid 1px var(--dark);
+    outline: none;
+    font-family: "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    font-size: 1.5rem;
+    height: 3rem;
+    border-radius: 4px;
+    padding: 0 1.5rem;
+}
 
+.text-input:hover {
+    box-shadow: 0 0 5px #999;
+}
+
+button:hover {
+    background-color: var(--primary);
+    box-shadow: 0 0 5px #999;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--primary);
+    height: 4rem;
+    border-top: solid 1px var(--primary);
+    box-shadow: inset 0px 4px 8px var(--dark);
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--light);
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: var(--light);
+    padding: 0 2rem;
+}
+
+footer a:hover, 
+.footer-links a:hover {
+    color: var(--secondary);
+}
+
+/*insert media breaks here
+
+nav breaks at 960px width - insert burger bar from max 968px 
+about 960px also, display photo underneath or above text. 
+portfolio doesnt look good around 1000px - change to display block
+at 668px change portfolio cards to flex column
+contact at 1000px change to display form underneath, width of text = 100%
+footer, at 1000px media break, put flex anchors under patricktheodore, at 668, make it flex col. 
+*/
+
+@media screen and (max-width: 992px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        height: fit-content;
+    }
+    nav {
+        flex-direction: column;
+    }
+    header h1,
+    .quick-links,
+    .socials {
+        margin-bottom: 1rem;
+    }
+  .page-content {
+    flex-direction: column;
+  }
+  .text {
+    flex-direction: column;
+    align-items: center;
+    max-width: 90%;
+  }
+  #about-image {
+    width: 50%;
+    height: 50%;
+    padding: 0 0 5% 0;
+  }
+  .contact-form {
+    margin: 0 0 4rem 0;
+  }
+  .featured {
+    flex-direction: column;
+  }
+.scratch {
+    max-width: 66%;
+    margin: 0%;
+  }
+  footer {
+      flex-direction: column;
+      border-bottom: 1.5rem;
+  }
+  .footer-links {
+      width: auto;
+  }
+.footer-links a {
+    padding: 0 1rem;
+}
+}
+
+@media screen and (max-width:768px) {
+    #thumbs {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;        
+    }
+
+    #thumbs li {
+        max-width: 66%;
+        min-width: 66%;
+        margin: 0 0 2% 0;
+    }
+
+    .quick-links {
+        flex-direction: column;
+    }
+
+    .quick-links li {
+        margin-bottom: 0.5rem;
+        font-size: 1.5rem;
+    }
+    
+}

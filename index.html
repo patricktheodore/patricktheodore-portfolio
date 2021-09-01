@@ -16,16 +16,19 @@
     <header id="home">
         <h1><a href=#home>patricktheodore.</a></h1>
         <nav>
-            <a href="#about">about.</a>
-            <a href="#portfolio">featured.</a>
-            <a href="#thumbs">portfolio.</a>
-            <a href="#portfolio">blog.</a>
-            <a href="#contact">contact.</a>
+            <ul class="quick-links">
+                <li><a href="#about">about.</a></li>
+                <li><a href="#portfolio">featured.</a></li>
+                <li><a href="#portfolio">portfolio.</a></li>
+                <li><a href="#portfolio">blog.</a></li>
+                <li><a href="#contact">contact.</a></li>
+            </ul>           
             <div class="socials">
-                <a class="fab fa-facebook fa-2x" title="facebook" target="_blank"></a>
-                <a class="fab fa-linkedin-in fa-2x" title="linkedin" target="_blank"></a>
-                <a class="fab fa-instagram fa-2x" title="instagram" target="_blank"></a>
+                <a class="fab fa-facebook fa-2x" title="facebook" href="#home" target="_blank"></a>
+                <a class="fab fa-linkedin-in fa-2x" title="linkedin" href="#home" target="_blank"></a>
+                <a class="fab fa-instagram fa-2x" title="instagram" href="home" target="_blank"></a>
             </div>
+            
         </nav>
     </header>
 
@@ -146,16 +149,40 @@
                     coffee Godard
                 </p>
             </div>
-            <form class="contact-form">
-                
-            </form>
+            <div class="contact-form">
+                <form id="contact-form">
+                    <p>
+                        <label for="name">name.</label>
+                        <br>
+                        <input class="text-input" type="text" id="name">
+                    </p>
+                    <p>
+                        <label for="email">email.</label>
+                        <br>
+                        <input type="text" class="text-input" id="email">
+                    </p>
+                    <p>
+                        <label for="message">message.</label>
+                        <br>
+                        <textarea class="text-input" id="message"></textarea>
+                    </p>
+                    <p>
+                        <button>send.</button>
+                    </p>
+                </form>
+            </div>
         </section>
-
-
     </main>
 
     <footer>
-
+        <a href="#home">&copy; 2021 patricktheodore.</a>
+            <div class="footer-links">
+                <a href="#about">about.</a>
+                <a href="#portfolio">featured.</a>
+                <a href="#portfolio">portfolio.</a>
+                <a href="#portfolio">blog.</a>
+                <a href="#contact">contact.</a>
+            </div>
     </footer>
 
 </body>
