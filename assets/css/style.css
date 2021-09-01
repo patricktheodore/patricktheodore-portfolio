@@ -105,7 +105,7 @@ header h1 a:hover,
 }
 
 .hero-banner {
-    background-image: url("/Users/patricksara/Desktop/BootCamp/patricktheodore-week-2-homework/assets/images/wallpaperflare.com_wallpaper.jpg");
+    background-image: url("./assets/images/wallpaperflare.com_wallpaper.jpg");
     background-color: var(--primary);
     background-size: cover;
     background-position: center;
