@@ -15,6 +15,7 @@ body {
     color: var(--secondary);
 }
 
+/*want horizontal responsive header*/
 header {
     display: flex;
     flex-direction: row;
@@ -104,6 +105,7 @@ header h1 a:hover,
     cursor: pointer;
 }
 
+/*adding hero banner placeholder*/
 .hero-banner {
     background-image: url("../images/wallpaperflare.com_wallpaper.jpg");
     background-color: var(--primary);
@@ -128,10 +130,8 @@ header h1 a:hover,
 }
 
 
-/*here starts my styling for the content
-try putting all content including image in a container, flex-direction: row. then inside 
-the container, have a seperate container for text and image. text flex-direction: col. then just
-outside the text flex container, the image should still fit inside the large of the containers.*/
+/*main content styling
+-make style for entire page contents before specific stylings*/
 .primary-content {
     display: flex;
     flex-wrap: wrap;
@@ -181,6 +181,7 @@ outside the text flex container, the image should still fit inside the large of 
     color: var(--dark);
 }
 
+/*recent image style*/
 #about-image {
     border-radius: 50%;
     width: 30%;
@@ -231,6 +232,7 @@ outside the text flex container, the image should still fit inside the large of 
     border-radius: 4px;
 }
 
+/*flex thumbnails for portfolio*/
 #thumbs {
     display: flex;
     flex-wrap: wrap;
