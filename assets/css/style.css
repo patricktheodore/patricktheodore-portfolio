@@ -105,7 +105,7 @@ header h1 a:hover,
 }
 
 .hero-banner {
-    background-image: url("./assets/images/wallpaperflare.com_wallpaper.jpg");
+    background-image: url("../images/wallpaperflare.com_wallpaper.jpg");
     background-color: var(--primary);
     background-size: cover;
     background-position: center;
