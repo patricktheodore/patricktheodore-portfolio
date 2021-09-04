@@ -1,7 +1,3 @@
-/*need to add flex: 1 1 0 400px for example, grown shrink, basis, to make responsive design*/
-
-
-
 /*webapp color scheme*/
 :root {
     --dark: black;
@@ -352,7 +348,7 @@ button:hover {
 footer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--primary);
     height: 4rem;
@@ -363,104 +359,13 @@ footer {
 footer a {
     text-decoration: none;
     color: var(--light);
-}
-
-.footer-links {
-    display: flex;
-    flex-wrap: wrap;
-    width: 60%;
-}
-
-.footer-links a {
-    text-decoration: none;
-    color: var(--light);
     padding: 0 2rem;
 }
 
-footer a:hover, 
-.footer-links a:hover {
-    color: var(--secondary);
-}
-
-/*insert media breaks here
-
-nav breaks at 960px width - insert burger bar from max 968px 
-about 960px also, display photo underneath or above text. 
-portfolio doesnt look good around 1000px - change to display block
-at 668px change portfolio cards to flex column
-contact at 1000px change to display form underneath, width of text = 100%
-footer, at 1000px media break, put flex anchors under patricktheodore, at 668, make it flex col. 
-*/
-
-@media screen and (max-width: 992px) {
-    header {
-        flex-direction: column;
-        justify-content: center;
-        height: fit-content;
-    }
-    nav {
-        flex-direction: column;
-    }
-    header h1,
-    .quick-links,
-    .socials {
-        margin-bottom: 1rem;
-    }
-  .page-content {
-    flex-direction: column;
-  }
-  .text {
-    flex-direction: column;
-    align-items: center;
-    max-width: 90%;
-  }
-  #about-image {
-    width: 50%;
-    height: 50%;
-    padding: 0 0 5% 0;
-  }
-  .contact-form {
-    margin: 0 0 4rem 0;
-  }
-  .featured {
-    flex-direction: column;
-  }
-.scratch {
-    max-width: 66%;
-    margin: 0%;
-  }
-  footer {
-      flex-direction: column;
-      border-bottom: 1.5rem;
-  }
-  .footer-links {
-      width: auto;
-  }
 .footer-links a {
-    padding: 0 1rem;
+    padding: 0 2rem;
 }
-}
 
-@media screen and (max-width:768px) {
-    #thumbs {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;        
-    }
-
-    #thumbs li {
-        max-width: 66%;
-        min-width: 66%;
-        margin: 0 0 2% 0;
-    }
-
-    .quick-links {
-        flex-direction: column;
-    }
-
-    .quick-links li {
-        margin-bottom: 0.5rem;
-        font-size: 1.5rem;
-    }
-    
+footer a:hover {
+    color: var(--secondary);
 }
