@@ -77,6 +77,8 @@ nav div {
 header h1 a:hover,
 .socials a:hover {
     color: var(--primary);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
 }
 
 /*socials in a seperate container so i can style easier for mediabreaks*/
@@ -123,6 +125,8 @@ header h1 a:hover,
 
 .hero-banner div a:hover {
     color: var(--primary);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
 }
 
 
@@ -343,6 +347,8 @@ button {
 button:hover {
     background-color: var(--primary);
     box-shadow: 0 0 5px #999;
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
 }
 
 footer {
@@ -368,4 +374,6 @@ footer a {
 
 footer a:hover {
     color: var(--secondary);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
 }
