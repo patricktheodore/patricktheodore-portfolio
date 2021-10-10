@@ -11,99 +11,32 @@ body {
     color: var(--secondary);
 }
 
-/*want horizontal responsive header*/
-header {
-    display: flex;
+.custom-brand {
+    font-size: 2rem;
+    color: white;
+}
+
+.social-navs-container {
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--dark);
-    height: 5rem;
-    width: 100%;
 }
 
-main {
-    max-width: 92%;
-    margin-left: auto;
-    margin-right: auto;
+.nav-link {
+    color: var(--secondary);
 }
 
-header h1 {
-    font-size: 1.75rem;
-    padding: 0 1% 0 2%;
-    font-weight: lighter;
+.fa-2x {
+    display: inline;
+    margin-right: 1rem;
+    color: white;
 }
 
-header h1 a {
-    text-decoration: none;
-    color: var(--light);
-}
-
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 70%;
-}
-
-.quick-links {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+.custom-toggler {
+    border: none;
 }
 
 
-.quick-links li a {
-    color: var(--light);
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: lighter;
-    padding: 0 1rem;
-    margin-right: 1%;
-}
 
-
-/*aligning anchors to the right margin */
-nav div {
-    margin-right: 3%;
-}
-
-/*changing the color of the link when hovered over*/
-.quick-links li a:hover,
-header h1 a:hover,
-.socials a:hover {
-    color: var(--primary);
-    transform: translateY(-0.1rem);
-    transition: transform 150ms;
-}
-
-/*socials in a seperate container so i can style easier for mediabreaks*/
-.socials {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    color: var(--light);
-    font-size: 1rem;
-}
-
-.socials a {
-    color: var(--light);
-    text-decoration: none;
-    font-weight: lighter;
-    padding: 0 1rem;
-    margin-right: 1%; 
-}
-
-.socials a:hover {
-    cursor: pointer;
-}
-
-/*adding hero banner placeholder*/
+/*adding hero banner placeholde
 .hero-banner {
     background-image: url("../images/wallpaperflare.com_wallpaper.jpg");
     background-color: var(--primary);
@@ -131,7 +64,7 @@ header h1 a:hover,
 
 
 /*main content styling
--make style for entire page contents before specific stylings*/
+-make style for entire page contents before specific stylings
 .primary-content {
     display: flex;
     flex-wrap: wrap;
@@ -181,7 +114,7 @@ header h1 a:hover,
     color: var(--dark);
 }
 
-/*recent image style*/
+/*recent image style
 #about-image {
     border-radius: 50%;
     width: 30%;
@@ -191,7 +124,7 @@ header h1 a:hover,
     align-self: center;
 }
 
-/*main flex portfolio items*/
+/*main flex portfolio items
 .portfolio {
     display: flex;
     flex-direction: row;
@@ -232,7 +165,7 @@ header h1 a:hover,
     border-radius: 4px;
 }
 
-/*flex thumbnails for portfolio*/
+/*flex thumbnails for portfolio
 #thumbs {
     display: flex;
     flex-wrap: wrap;
@@ -376,4 +309,4 @@ footer a:hover {
     color: var(--secondary);
     transform: translateY(-0.1rem);
     transition: transform 150ms;
-}
+}*/

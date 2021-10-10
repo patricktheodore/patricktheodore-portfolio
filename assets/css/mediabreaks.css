@@ -8,75 +8,21 @@ contact at 1000px change to display form underneath, width of text = 100%
 footer, at 1000px media break, put flex anchors under patricktheodore, at 668, make it flex col. 
 */
 
-@media screen and (max-width: 992px) {
-    header {
-        flex-direction: column;
-        justify-content: center;
-        height: fit-content;
-    }
-    nav {
-        flex-direction: column;
-    }
-    header h1,
-    .quick-links,
-    .socials {
-        margin-bottom: 1rem;
-    }
-  .page-content {
-    flex-direction: column;
+@media screen and (max-width: 440px) {
+  .custom-brand, 
+  .fa-bars {
+    font-size: 1.5rem;
   }
-  .text {
-    flex-direction: column;
+
+  .nav-links-container, 
+  .social-navs-container {
+    justify-content: center;
     align-items: center;
-    max-width: 90%;
   }
-  #about-image {
-    width: 50%;
-    height: 50%;
-    padding: 0 0 5% 0;
-  }
-  .contact-form {
-    margin: 0 0 4rem 0;
-  }
-  .featured {
-    flex-direction: column;
-  }
-.scratch {
-    max-width: 66%;
-    margin: 0%;
-  }
-  footer {
-      flex-direction: column;
-      border-bottom: 1.5rem;
-  }
-  .footer-links {
-      width: auto;
-  }
-.footer-links a {
-    padding: 0 1rem;
-}
-}
 
-@media screen and (max-width:768px) {
-    #thumbs {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;        
-    }
-
-    #thumbs li {
-        max-width: 66%;
-        min-width: 66%;
-        margin: 0 0 2% 0;
-    }
-
-    .quick-links {
-        flex-direction: column;
-    }
-
-    .quick-links li {
-        margin-bottom: 0.5rem;
-        font-size: 1.5rem;
-    }
-    
+  .nav-link,
+  .fa-2x {
+    padding: 1rem;
+    margin: 0 2rem;
+  }
 }
