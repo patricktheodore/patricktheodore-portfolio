@@ -35,7 +35,7 @@
                             <a class="nav-link custom-link" href="#about">about.</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link custom-link" href="#portfolio">featured.</a>
+                            <a class="nav-link custom-link" href="#featured">featured.</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link custom-link" href="#portfolio">portfolio.</a>
@@ -61,7 +61,8 @@
                                 target="_blank"></a>
                         </li>
                         <li class="nav-item social-navs">
-                            <a class="nav-link custom-link fab fa-github fa-2x" title="github" href="#home" target="_blank"></a>
+                            <a class="nav-link custom-link fab fa-github fa-2x" title="github" href="#home"
+                                target="_blank"></a>
                         </li>
                     </ul>
                 </div>
@@ -81,138 +82,77 @@
 
     <main class="container">
         <!--about me-->
-        <div class="row justify-content-center align-items-center" id="about">
-            <div class="col-8 col-md-6">
-                <h2>about.</h2>
-                <h3>i am an Australia based student currently doing a 6 month fullstack web development bootcamp.</h3>
+        <div class="row justify-content-center align-items-center page-content" id="about">
+            <div class="col-sm-12 col-md-10 col-lg-6">
+                <h2 class="display-2 section-heading">about.</h2>
+                <h3 class="display-3 section-sub-heading">i am an Australia based full stack web developer with a
+                    passion for building beautifully intuitive applications.</h3>
                 <div>
-                    <p>
-                        After studying architecture for 3 years at the university of western australia I decided to
-                        go on a trip around the world to try and find my passion. Fast forward another 6 years, and
-                        I have believe I have finally found where my future lies. Web Development. I have just started
-                        a 6 month intensive bootcamp to hopefully become the best failed architect web designed the
-                        world has ever seen. As I progress through the bootcamp I will be updating my portfolio to
-                        better reflect my skills.
+                    <p class="section-text-content">
+                        i am a full stack web developer leveraging hospitality management and an architecture background
+                        to build
+                        a more aesthetically pleasing and intuitive UI experience on the web. Certificate in Full Stack
+                        Web Development from University of Western Australia, where I honed my skills in JavaScript
+                        (jQuery), responsive web design and node.js . Passionate about innovative problem solving and
+                        developing fluid, intuitive, and well designed apps, with a focus on responsive design and
+                        development. My main goal for every project is to deliver an end product which maximises user
+                        experience. I have recently applied my knowledge to create multiple apps that use a mobile-first
+                        design and implement a fluid layout that gives the user an intuitive experience. I’m very
+                        excited to apply my expanding skill set and build on my knowledge as part of a quality-driven
+                        team.
                     </p>
                 </div>
             </div>
-            <div class="col-8 col-md-6">
-                <img src="./assets/images/IMG_3038.jpg" class="img-fluid" alt="picture of myself in front of a colorful bridge"
-                    id="about-image" />
+            <div class="col-sm-12 col-md-10 col-lg-6 custom-profile-img-container">
+                <img src="./assets/images/IMG_3038.jpg" class="img-fluid"
+                    alt="picture of myself in front of a bridge in my hometown of perth" id="about-image" />
             </div>
         </div>
 
-
-
-
-
-        <!--work/portfolio/inclouded works - scratch game, use google as an example, youtube link, and a couple of other placeholder items (pigeon blog, pangea) initial project must be bigger than the rest-->
-        <section class="page-content portfolio" id="portfolio">
-            <div class="featured">
-                <div class="portfolio-text text">
-                    <h2>portfolio.</h2>
-                    <h3>here is some of my stuffff</h3>
-                    <p>
-                        Whilst I have just started really creating new things for myself, I will be updating my
-                        portfolio
-                        with new apps I create. In the meantime, please enjoy my scratch game along with multiple dummy
-                        links
-                        so my page looks sxc.
+        <div class="row page-content" id="featured">
+            <div class="col-sm-12 col-md-12 col-lg-6">
+                <h2 class="display-2 section-heading">featured.</h2>
+                <h3 class="display-3 section-sub-heading">highlights-hub.</h3>
+                <div>
+                    <p class="section-text-content">
+                        highlights-hub is an interactive application that allows the user to view highlights from recent
+                        futbol games around the globe. From the English Premier League, to the UEFA Champions League and
+                        everyting in between. The apps also intuitively saves your favourite team to storage so you can
+                        quickly see their recent games, upcoming fixtures, and place on the league table. The app makes
+                        use of jQuery, moment.js, fetching from mupltiple web API's, and bootstrap CSS frameowrk. More
+                        development coming soon!
                     </p>
                 </div>
-                <div class="scratch">
-                    <a href="https://scratch.mit.edu/projects/554850077/fullscreen/">
-                        <img src="assets/images/sos-dino.png" alt="cartoon dinosaur game">
-                        <div class="description">
-                            <div>
-                                <h3>sos dino.</h3>
-                                <p>a scratch game</p>
-                            </div>
-                            <span class="fas fa-chevron-right fa-2x"></span>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6 featured-content">
+                <a href="https://patricktheodore.github.io/football-highlights-dashboard/" target="_blank">
+                    <div class="card bg-dark text-white">
+                        <img src="./assets/images/placeholder1.jpeg" class="card-img-top" alt="..." id="featured-image">
+                        <div class="card-img-overlay custom-overlay" id="featured-overlay">
+                            <h3>technologies used.</h3>
+                            <h5>javascript.<br>server side api's.<br>bootstrap css framework</h5>
+                            <button id="featured-btn">learn more.</button>
                         </div>
-                    </a>
-                </div>
+                        <div class="card-body">
+                            <p class="card-text" id="featured-content-text">highlights-hub was made as part of a
+                                project, and further developed
+                                into what it is today.</p>
+                        </div>
+                    </div>
+                </a>
             </div>
+        </div>
 
-            <div>
-                <ul id="thumbs">
-                    <li>
-                        <a href="https://patricktheodore.github.io/random-password-generator/">
-                            <img src="assets/images/placeholder1.jpeg" alt="placeholder image">
-                            <div class="description">
-                                <div>
-                                    <h3>password generator.</h3>
-                                    <p>a random string generator</p>
-                                </div>
-                                <span class="fas fa-chevron-right fa-2x"></span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-                            <img src="assets/images/placeholder2.jpeg" alt="placeholder image">
-                            <div class="description">
-                                <div>
-                                    <h3>pangea.</h3>
-                                    <p>a dropshipping web app</p>
-                                </div>
-                                <span class="fas fa-chevron-right fa-2x"></span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-                            <img src="assets/images/placeholder3.jpeg" alt="placeholder image">
-                            <div class="description">
-                                <div>
-                                    <h3>team pigeon.</h3>
-                                    <p>a blog dedicated to steve the cat</p>
-                                </div>
-                                <span class="fas fa-chevron-right fa-2x"></span>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <!--contact details + contact form i want these to flex side by side, to ontop of each other. -->
-        <section class="page-content" id="contact">
-            <div class="contact-description text">
-                <h2>contact.</h2>
-                <h3>send me an email.</h3>
-                <p>
-                    By this point of my portfolio you probably want to offer me a handsome salary and fancy corner
-                    office.
-                    So please, send me an email with your offer, and I'll pretend it isn't the first one.
-                </p>
-            </div>
-            <div class="contact-form">
-                <form id="contact-form">
-                    <p>
-                        <label for="name">name.</label>
-                        <br>
-                        <input class="text-input" type="text" id="name">
-                    </p>
-                    <p>
-                        <label for="email">email.</label>
-                        <br>
-                        <input type="text" class="text-input" id="email">
-                    </p>
-                    <p>
-                        <label for="message">message.</label>
-                        <br>
-                        <textarea class="text-input" id="message"></textarea>
-                    </p>
-                    <p>
-                        <button>send.</button>
-                    </p>
-                </form>
-            </div>
-        </section>
     </main>
 
-    <footer>
+    <footer class="footer mt-auto custom-footer">
+        <div class="container footer-cont">
+            <span class="footer-content">patricktheodore.</span>
+            <a class="nav-link custom-link fab fa-github fa-2x" title="github" href="#home" target="_blank"></a>
+        </div>
+    </footer>
+
+    <!-- <footer>
         <a href="#home">&copy; 2021 patricktheodore.</a>
         <div class="footer-links">
             <a href="#about">about.</a>
@@ -221,11 +161,14 @@
             <a href="#portfolio">blog.</a>
             <a href="#contact">contact.</a>
         </div>
-    </footer>
+    </footer> -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

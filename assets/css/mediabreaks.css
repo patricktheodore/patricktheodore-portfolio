@@ -1,14 +1,15 @@
-/*insert media breaks here
+@media screen and (max-width:1200px) {
+  .custom-profile-img-container {
+    padding: 0;
+    margin: 2rem 0;
+  }
 
-nav breaks at 960px width - insert burger bar from max 968px 
-about 960px also, display photo underneath or above text. 
-portfolio doesnt look good around 1000px - change to display block
-at 668px change portfolio cards to flex column
-contact at 1000px change to display form underneath, width of text = 100%
-footer, at 1000px media break, put flex anchors under patricktheodore, at 668, make it flex col. 
-*/
+  #about {
+    margin-top: 5rem;
+  }
+}
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
   .custom-brand, 
   .fa-bars,
   .custom-toggler,
@@ -29,4 +30,16 @@ footer, at 1000px media break, put flex anchors under patricktheodore, at 668, m
     padding: 1rem;
     margin: 0 2rem;
   }
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio-fa {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .section-heading {
+    font-size: 5rem;
+  }  
 }
