@@ -8,10 +8,14 @@ contact at 1000px change to display form underneath, width of text = 100%
 footer, at 1000px media break, put flex anchors under patricktheodore, at 668, make it flex col. 
 */
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 991px) {
   .custom-brand, 
-  .fa-bars {
+  .fa-bars,
+  .custom-toggler,
+  #burger-nav {
     font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
   }
 
   .nav-links-container, 

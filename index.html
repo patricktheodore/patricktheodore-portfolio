@@ -27,41 +27,41 @@
                 <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="fas fa-bars fa-2x"></span>
+                    <span class="fas fa-bars fa-2x" id="burger-nav"></span>
                 </button>
                 <div class="collapse navbar-collapse custom-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-links-container">
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">about.</a>
+                            <a class="nav-link custom-link" href="#about">about.</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link custom-link" href="#portfolio">featured.</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#portfolio">portfolio.</a>
+                            <a class="nav-link custom-link" href="#portfolio">portfolio.</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#portfolio">blog.</a>
+                            <a class="nav-link custom-link" href="#portfolio">blog.</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">contact.</a>
+                            <a class="nav-link custom-link" href="#contact">contact.</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 social-navs-container">
                         <li class="nav-item social-navs ">
-                            <a class="nav-link fab fa-facebook fa-2x" title="facebook"
+                            <a class="nav-link custom-link fab fa-facebook fa-2x" title="facebook"
                                 href="https://www.facebook.com/patricktheodore-104912218595856" target="_blank"></a>
                         </li>
                         <li class="nav-item social-navs">
-                            <a class="nav-link fab fa-linkedin-in fa-2x" title="linkedin" href="#home"
+                            <a class="nav-link custom-link fab fa-linkedin-in fa-2x" title="linkedin" href="#home"
                                 target="_blank"></a>
                         </li>
                         <li class="nav-item social-navs">
-                            <a class="nav-link fab fa-instagram fa-2x" title="instagram" href="#home"
+                            <a class="nav-link custom-link fab fa-instagram fa-2x" title="instagram" href="#home"
                                 target="_blank"></a>
                         </li>
                         <li class="nav-item social-navs">
-                            <a class="nav-link fab fa-github fa-2x" title="github" href="#home" target="_blank"></a>
+                            <a class="nav-link custom-link fab fa-github fa-2x" title="github" href="#home" target="_blank"></a>
                         </li>
                     </ul>
                 </div>
@@ -69,19 +69,20 @@
         </nav>
     </header>
 
-
-    <!-- banner/hero image -->
-    <section class="hero-banner">
-        <div>
-            <img src="./assets/images/wallpaperflare.com_wallpaper.jpg" class="img-fluid" alt="graphic art design">
-            <a class="fas fa-chevron-down fa-2x" title="downarrow" href="#about"></a>
+    <div class="container-fluid custom-banner">
+        <div class="row custom-banner">
+            <div class="col custom-banner" id="hero-banner">
+                <img src="./assets/images/wallpaperflare.com_wallpaper.jpg" class="img-fluid" alt="graphic art design">
+            </div>
         </div>
-    </section>
+    </div>
 
-    <main class="container my-3">
+
+
+    <main class="container">
         <!--about me-->
-        <div class="row align-items-center" id="about">
-            <div class="col">
+        <div class="row justify-content-center align-items-center" id="about">
+            <div class="col-8 col-md-6">
                 <h2>about.</h2>
                 <h3>i am an Australia based student currently doing a 6 month fullstack web development bootcamp.</h3>
                 <div>
@@ -95,8 +96,8 @@
                     </p>
                 </div>
             </div>
-            <div class="col">
-                <img src="./assets/images/IMG_3038.jpg" alt="picture of myself in front of a colorful bridge"
+            <div class="col-8 col-md-6">
+                <img src="./assets/images/IMG_3038.jpg" class="img-fluid" alt="picture of myself in front of a colorful bridge"
                     id="about-image" />
             </div>
         </div>

@@ -1,6 +1,6 @@
 /*webapp color scheme*/
 :root {
-    --dark: black;
+    --dark: #343a40;
     --light: #e3e8ec;
     --primary: #5d666b;
     --secondary: #a7a7a7;
@@ -9,11 +9,14 @@
 body {
     background-color: var(--light);
     color: var(--secondary);
+    width: 100vw;
 }
 
+/*header styling start*/
 .custom-brand {
     font-size: 2rem;
     color: white;
+    letter-spacing: -0.2rem;
 }
 
 .social-navs-container {
@@ -33,37 +36,40 @@ body {
 .custom-toggler {
     border: none;
 }
-
-
-
-/*adding hero banner placeholde
-.hero-banner {
-    background-image: url("../images/wallpaperflare.com_wallpaper.jpg");
-    background-color: var(--primary);
-    background-size: cover;
-    background-position: center;
-    min-height: 75vh;
-    padding: 2% 6%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    margin-right: auto;
-    font-size: 1rem;
-    text-align: center;
+ 
+.nav-links-container,
+.social-navs-container {
+    margin-left: 2rem;
 }
 
-.hero-banner div a {
-    color: var(--light);
-}
-
-.hero-banner div a:hover {
-    color: var(--primary);
+.custom-link:hover {
+    color: white;
     transform: translateY(-0.1rem);
     transition: transform 150ms;
 }
 
+/*header style end*/
 
-/*main content styling
+/*hero banner style start*/
+
+.custom-banner {
+    margin: 0;
+    padding: 0;
+}
+
+/*hero banner style ends*/
+
+/*main content styling*/
+
+#about-image {
+    border-radius: 50%;
+    flex-shrink: 2;
+    display: block;
+    align-self: center;
+}
+
+
+/*
 -make style for entire page contents before specific stylings
 .primary-content {
     display: flex;
@@ -115,14 +121,7 @@ body {
 }
 
 /*recent image style
-#about-image {
-    border-radius: 50%;
-    width: 30%;
-    height: 30%;
-    flex-shrink: 2;
-    display: block;
-    align-self: center;
-}
+
 
 /*main flex portfolio items
 .portfolio {
