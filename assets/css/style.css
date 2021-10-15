@@ -269,7 +269,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 0.5rem;
+    height: 100%;
 }
 
 #featuredModalLabel,
@@ -278,6 +278,11 @@ body {
     color: var(--dark);
     text-align: center;
 }
+
+#footer-scroll-up {
+    text-align: center;
+}
+
 
 /*recent image style
 
