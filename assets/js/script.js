@@ -15,3 +15,17 @@ githubBtn.on('click', function() {
 deployedAppModalBtn.on('click', function() {
     window.open('https://patricktheodore.github.io/football-highlights-dashboard/', '_blank')
 });
+
+const hiBtn = $('#hero-overlay-title');
+const heroOverlay = $('#hero-overlay');
+
+hiBtn.hover(function() {
+    $(this).text('').addClass('fas fa-chevron-down fa-5x').css('cursor', 'pointer');
+}, function() {
+    $(this).text('hi').removeClass('fas fa-chevron-down fa-5x');
+});
+
+hiBtn.on('click', function() {
+    document.location = './index.html#about'
+});
+
