@@ -23,7 +23,7 @@
     <header>
         <nav class="navbar navbar-expand-lg sitcky-top navbar-dark bg-dark custom-nav">
             <div class="container-fluid">
-                <a class="navbar-brand custom-brand" href="#">patricktheodore.</a>
+                <a class="navbar-brand custom-brand" href="./index.html">patricktheodore.</a>
                 <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -38,13 +38,13 @@
                             <a class="nav-link custom-link" href="#featured">featured.</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link custom-link" href="#portfolio">portfolio.</a>
+                            <a class="nav-link custom-link" href="./portfolio.html">portfolio.</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link custom-link" href="#portfolio">blog.</a>
+                            <a class="nav-link custom-link" href="./portfolio.html">blog.</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link custom-link" href="#contact">contact.</a>
+                            <a class="nav-link custom-link" href="./contact.html">contact.</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 social-navs-container">
@@ -53,15 +53,12 @@
                                 href="https://www.facebook.com/patricktheodore-104912218595856" target="_blank"></a>
                         </li>
                         <li class="nav-item social-navs">
-                            <a class="nav-link custom-link fab fa-linkedin-in fa-2x" title="linkedin" href="#home"
+                            <a class="nav-link custom-link fab fa-linkedin-in fa-2x" title="linkedin" href="https://www.linkedin.com/in/patrick-sara-8186a3170/"
                                 target="_blank"></a>
                         </li>
-                        <li class="nav-item social-navs">
-                            <a class="nav-link custom-link fab fa-instagram fa-2x" title="instagram" href="#home"
-                                target="_blank"></a>
                         </li>
                         <li class="nav-item social-navs">
-                            <a class="nav-link custom-link fab fa-github fa-2x" title="github" href="#home"
+                            <a class="nav-link custom-link fab fa-github fa-2x" title="github" href="https://github.com/patricktheodore"
                                 target="_blank"></a>
                         </li>
                     </ul>
@@ -125,24 +122,53 @@
                 </div>
             </div>
             <div class="col-sm-12 col-md-12 col-lg-6 featured-content">
-                    <div class="card bg-dark text-white">
-                        <img src="./assets/images/placeholder1.jpeg" class="card-img-top" alt="..." id="featured-image">
-                        <div class="card-img-overlay custom-overlay" id="featured-overlay">
-                            <h3>highlights-hub</h3>
-                            <p>javascript/fetch api's.</p>
-                            <button id="featured-btn">learn more.</button>
+                <div class="card bg-dark text-white">
+                    <img src="./assets/images/placeholder1.jpeg" class="card-img-top" alt="..." id="featured-image">
+                    <div class="card-img-overlay custom-overlay" id="featured-overlay">
+                        <h3>highlights-hub</h3>
+                        <p>javascript/fetch api's.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#featuredModal" id="featured-btn">learn more.</button>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text" id="featured-content-text">highlights-hub was made as part of a
+                            project, and further developed
+                            into what it is today.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="featuredModal" tabindex="-1" aria-labelledby="featuredModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="featuredModalLabel">highlights-hub</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="card-body">
-                            <p class="card-text" id="featured-content-text">highlights-hub was made as part of a
-                                project, and further developed
-                                into what it is today.</p>
+                        <div class="modal-body">
+                            <img src="./assets/images/Screen Shot 2021-10-15 at 9.06.50 pm.png"
+                                alt="screenshot of deployed highlights hub app" id="modal-img">
+                            <p>highlights-hub is an app that allows the user to view highlight videos from games played
+                                recently in the english premier league. select your favourite team and watch recent
+                                highlights, see upcoming games, and view the league table all from the one dashboard.
+                            </p>
+                            <p>technologies used: jQuery, bootstrap css framework, fetch api, moment.js</p>
+                            <button class="modal-btn" id="github-modal-btn">github repo.<span class="fas fa-chevron-right modal-btn-fa"></span></button>
+                            <button class="modal-btn" id="deployed-modal-btn">deployed app.<span class="fas fa-chevron-right modal-btn-fa"></span></button>
                         </div>
                     </div>
+                </div>
             </div>
+
+
+
         </div>
         <div class="row">
             <div class="col-12 project-btn-cont">
-                <button id="see-my-projects-btn">see the rest of my work.<span class="fas fa-chevron-right" id="project-fa"></span></button>
+                <button id="see-my-projects-btn">browse the rest of my work.<span class="fas fa-chevron-right"
+                        id="project-fa"></span></button>
             </div>
         </div>
 

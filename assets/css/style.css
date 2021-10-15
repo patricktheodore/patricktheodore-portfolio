@@ -138,8 +138,7 @@ body {
 }
 
 
-#featured-btn,
-#see-my-projects-btn {
+#featured-btn {
     background-color: var(--light);
     color: var(--dark);
     cursor: pointer;
@@ -157,17 +156,34 @@ body {
     background-color: var(--primary);
 }
 
+.modal-btn,
 #see-my-projects-btn {
-    padding: 1rem;
     background-color: var(--dark);
     color: var(--light);
-    border: solid 1px var(--light);
+    cursor: pointer;
+    border: solid 1px var(--dark);
+    font-size: 1rem;
+    border-radius: 4px;
+    text-align: center;
+    padding: 0.5rem;
 }
 
+.modal-btn:hover,
 #see-my-projects-btn:hover {
-    background-color: var(--primary);
-    transform: translateX(0.2rem);
+    background-color: var(--light);
+    color: var(--dark);
+    transform: translateY(-0.1rem);
     transition: transform 150ms;
+    box-shadow: 0 0 5px var(--dark);
+}
+
+.modal-btn:hover .modal-btn-fa,
+#see-my-projects-btn:hover #project-fa {
+    color: var(--dark);
+}
+
+#see-my-projects-btn {
+    padding: 1rem;
 }
 
 .project-btn-cont {
@@ -179,10 +195,15 @@ body {
     margin-bottom: 2rem;
 }
 
-#project-fa {
+#project-fa,
+.modal-btn-fa {
     padding-left: 2rem;
     display: inline;
     color: var(--light);
+}
+
+#modal-img {
+    margin-bottom: 2rem;
 }
 /* .featured-content:hover .fa-chevron-right,
 .portfolio-content:hover .fa-chevron-right {
@@ -211,6 +232,13 @@ body {
     align-items: center;
     justify-content: center;
     padding-top: 0.5rem;
+}
+
+#featuredModalLabel,
+.modal-body {
+    width: 100%;
+    color: var(--dark);
+    text-align: center;
 }
 
 /*recent image style
