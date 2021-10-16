@@ -216,7 +216,8 @@ body {
 }
 
 .modal-btn:hover .modal-btn-fa,
-#see-my-projects-btn:hover #project-fa {
+#see-my-projects-btn:hover #project-fa,
+#contact-btn:hover #contact-fa {
     color: var(--dark);
 }
 
@@ -234,7 +235,8 @@ body {
 }
 
 #project-fa,
-.modal-btn-fa {
+.modal-btn-fa,
+#contact-fa {
     padding-left: 2rem;
     display: inline;
     color: var(--light);

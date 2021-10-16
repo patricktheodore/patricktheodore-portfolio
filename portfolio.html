@@ -21,10 +21,10 @@
 
 <body>
 
-    <header>
+    <header class="sticky-top">
         <nav class="navbar navbar-expand-lg sitcky-top navbar-dark bg-dark custom-nav">
             <div class="container-fluid">
-                <a class="navbar-brand custom-brand" href="#">patricktheodore.</a>
+                <a class="navbar-brand custom-brand" href="./index.html">patricktheodore.</a>
                 <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -39,13 +39,13 @@
                             <a class="nav-link custom-link" href="#featured">featured.</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link custom-link" href="#portfolio">portfolio.</a>
+                            <a class="nav-link custom-link" href="./portfolio.html">portfolio.</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link custom-link" href="#portfolio">blog.</a>
+                            <a class="nav-link custom-link" href="./portfolio.html">blog.</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link custom-link" href="#contact">contact.</a>
+                            <a class="nav-link custom-link" href="./contact.html">contact.</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 social-navs-container">
@@ -54,16 +54,13 @@
                                 href="https://www.facebook.com/patricktheodore-104912218595856" target="_blank"></a>
                         </li>
                         <li class="nav-item social-navs">
-                            <a class="nav-link custom-link fab fa-linkedin-in fa-2x" title="linkedin" href="#home"
-                                target="_blank"></a>
+                            <a class="nav-link custom-link fab fa-linkedin-in fa-2x" title="linkedin"
+                                href="https://www.linkedin.com/in/patrick-sara-8186a3170/" target="_blank"></a>
+                        </li>
                         </li>
                         <li class="nav-item social-navs">
-                            <a class="nav-link custom-link fab fa-instagram fa-2x" title="instagram" href="#home"
-                                target="_blank"></a>
-                        </li>
-                        <li class="nav-item social-navs">
-                            <a class="nav-link custom-link fab fa-github fa-2x" title="github" href="#home"
-                                target="_blank"></a>
+                            <a class="nav-link custom-link fab fa-github fa-2x" title="github"
+                                href="https://github.com/patricktheodore" target="_blank"></a>
                         </li>
                     </ul>
                 </div>
@@ -77,7 +74,7 @@
 
     <main class="container">
         <div class="row page-content" id="portfolio">
-            <div class="col-sm-12 col-md-12 col-lg-6">
+            <div class="col-sm-12 col-md-12 col-lg-6 portfolio-content-cont">
                 <h2 class="display-2 section-heading">portfolio.</h2>
                 <h3 class="display-3 section-sub-heading">check out some of my latest projects.</h3>
                 <div>
@@ -89,8 +86,9 @@
                     </p>
                 </div>
             </div>
+            <!--weather dash-->
             <div class="col-sm-12 col-md-12 col-lg-6 portfolio-content" id="weather-dash">
-                <div class="card h-100">
+                <div class="card h-100 project">
                     <img src="./assets/images/placeholder3.jpeg" class="card-img-top" alt="..." id="weather-dash-img">
                     <div class="card-img-overlay custom-overlay" id="weather-dash-overlay">
                         <h3>weather-dashboard.</h3>
@@ -105,133 +103,203 @@
             </div>
             <!--weather modal-->
             <div class="modal fade" id="weatherModal" tabindex="-2" aria-labelledby="weatherModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="weatherModalLabel">weather-dashboard.</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="./assets/images/weather-dash.png"
-                            alt="screenshot of deployed highlights hub app" id="weather-modal-img">
-                        <p>weather dash is an interactive application that takes user input and displays the current weather conditions plus the weather forecast for the next 5 days. searches are saved in local storage and dsisplayed for the user to reference again if needed. 
-                        </p>
-                        <p>technologies used: javascript, local storage, openweather api, moment.js</p>
-                        <button class="modal-btn" id="weather-github-modal-btn">github repo.<span
-                                class="fas fa-chevron-right modal-btn-fa"></span></button>
-                        <button class="modal-btn" id="weather-deployed-modal-btn">deployed app.<span
-                                class="fas fa-chevron-right modal-btn-fa"></span></button>
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="weatherModalLabel">weather-dashboard.</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./assets/images/weather-dash.png" alt="screenshot of deployed highlights hub app"
+                                id="weather-modal-img">
+                            <p>weather dash is an interactive application that takes user input and displays the current
+                                weather conditions plus the weather forecast for the next 5 days. searches are saved in
+                                local storage and dsisplayed for the user to reference again if needed.
+                            </p>
+                            <p>technologies used: javascript, local storage, openweather api, moment.js</p>
+                            <button class="modal-btn" id="weather-github-modal-btn">github repo.<span
+                                    class="fas fa-chevron-right modal-btn-fa"></span></button>
+                            <button class="modal-btn" id="weather-deployed-modal-btn">deployed app.<span
+                                    class="fas fa-chevron-right modal-btn-fa"></span></button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
 
-
-            <div class="col-sm-12 col-md-6 col-lg-3 portfolio-content">
-                <a href="https://patricktheodore.github.io/work-day-scheduler/" target="_blank">
-                    <div class="card h-100">
-                        <img src="./assets/images/placeholder2.jpeg" class="card-img-top" alt="...">
-                        <div class="card-img-overlay custom-overlay portfolio-fa">
-                            <h1><span class="fas fa-chevron-right fa-2x"></span></h2>
+            <!--day planner-->
+            <div class="col-sm-12 col-md-6 col-lg-3 portfolio-content" id="day-planner">
+                <div class="card h-100 project">
+                    <img src="./assets/images/placeholder2.jpeg" class="card-img-top" alt="..." id="day-planner-img">
+                    <div class="card-img-overlay custom-overlay" id="day-planner-overlay">
+                        <h3>day-planner.</h3>
+                        <p>javascript/moment.js/local storage</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#dayPlannerModal" id="day-planner-btn">learn more.</button>
+                    </div>
+                    <div class="card-body" id="day-planner-desc">
+                        <p class="card-text" id="featured-content-text">an elegant workday planner.</p>
+                    </div>
+                </div>
+            </div>
+            <!--day-planner-modal-->
+            <div class="modal fade" id="dayPlannerModal" tabindex="-2" aria-labelledby="dayPlannerModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="dayPlannerModalLabel">work-day-scheduler.</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="card-body">
-                            <p class="card-text" id="featured-content-text">an elegant workday planner powered by
-                                moment.js.</p>
+                        <div class="modal-body">
+                            <img src="./assets/images/day-planner-demp.png" alt="screenshot of deployed highlights hub app"
+                                id="day-planner-modal-img">
+                            <p>an elegant work day scheduler, which dynamically loads work day hours and lets the user plan their day ahead. tasks are saved to local storage and will load after navigating away. 
+                            </p>
+                            <p>technologies used: javascript, local storage, moment.js</p>
+                            <button class="modal-btn" id="day-planner-github-modal-btn">github repo.<span
+                                    class="fas fa-chevron-right modal-btn-fa"></span></button>
+                            <button class="modal-btn" id="day-planner-deployed-modal-btn">deployed app.<span
+                                    class="fas fa-chevron-right modal-btn-fa"></span></button>
                         </div>
                     </div>
-                </a>
+                </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-3 portfolio-content">
-                <a href="https://patricktheodore.github.io/jsquiz/" target="_blank">
-                    <div class="card h-100">
-                        <img src="./assets/images/placeholder3.jpeg" class="card-img-top" alt="...">
-                        <div class="card-img-overlay custom-overlay portfolio-fa">
-                            <h1><span class="fas fa-chevron-right fa-2x"></span></h2>
+
+            <!--js-quiz-->
+            <div class="col-sm-12 col-md-6 col-lg-3 portfolio-content" id="js-quiz">
+                <div class="card h-100 project">
+                    <img src="./assets/images/placeholder1.jpeg" class="card-img-top" alt="..." id="js-quiz-img">
+                    <div class="card-img-overlay custom-overlay" id="js-quiz-overlay">
+                        <h3>javascript-quiz</h3>
+                        <p>javascript/local storage</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#jsQuizModal" id="js-quiz-btn">learn more.</button>
+                    </div>
+                    <div class="card-body" id="js-quiz-desc">
+                        <p class="card-text" id="featured-content-text">test your javascript knowledge.</p>
+                    </div>
+                </div>
+            </div>
+            <!--jsquiz-->
+            <div class="modal fade" id="jsQuizModal" tabindex="-2" aria-labelledby="jsQuizModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="jsQuizModalLabel">javascript-quiz.</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="card-body">
-                            <p class="card-text" id="featured-content-text">an interactive quiz app testing your
-                                javascript knowledge.</p>
+                        <div class="modal-body">
+                            <img src="./assets/images/js-quiz-demo.png" alt="screenshot of deployed highlights hub app"
+                                id="js-quiz-modal-img">
+                            <p>an interactive javascript quiz game, where the user is asked to answer various questions about javascript. scores are calculated, saved in local storage and displayed at the end. 
+                            </p>
+                            <p>technologies used: html, css, javascript, local storage</p>
+                            <button class="modal-btn" id="js-quiz-github-modal-btn">github repo.<span
+                                    class="fas fa-chevron-right modal-btn-fa"></span></button>
+                            <button class="modal-btn" id="js-quiz-deployed-modal-btn">deployed app.<span
+                                    class="fas fa-chevron-right modal-btn-fa"></span></button>
                         </div>
                     </div>
-                </a>
+                </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-3 portfolio-content">
-                <a href="https://patricktheodore.github.io/random-password-generator/" target="_blank">
-                    <div class="card h-100">
-                        <img src="./assets/images/placeholder1.jpeg" class="card-img-top" alt="...">
-                        <div class="card-img-overlay custom-overlay portfolio-fa">
-                            <h1><span class="fas fa-chevron-right fa-2x"></span></h2>
+
+            <!--password generator-->
+            <div class="col-sm-12 col-md-6 col-lg-3 portfolio-content" id="password-generator">
+                <div class="card h-100 project">
+                    <img src="./assets/images/wallpaperflare.com_wallpaper.jpg" class="card-img-top" alt="..."
+                        id="password-generator-img">
+                    <div class="card-img-overlay custom-overlay" id="password-generator-overlay">
+                        <h3>password generator.</h3>
+                        <p>javascript.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#passwordGeneratorModal" id="password-generator-btn">learn more.</button>
+                    </div>
+                    <div class="card-body" id="password-generator-desc">
+                        <p class="card-text" id="featured-content-text">generate a random password.</p>
+                    </div>
+                </div>
+            </div>
+            <!--password generator modal-->
+            <div class="modal fade" id="passwordGeneratorModal" tabindex="-2"
+                aria-labelledby="passwordGeneratorModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="passwordGeneratorModalLabel">random-password-generator.</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="card-body">
-                            <p class="card-text" id="featured-content-text">an app to help you create random secure
-                                passwords based of criteria set by you.</p>
+                        <div class="modal-body">
+                            <img src="./assets/images/password-generator.png" alt="screenshot of deployed highlights hub app"
+                                id="password-generator-modal-img">
+                            <p>a simple password generator powered by user inputs. select a password length, lowercase, uppercase, special symbols and/or numbers. 
+                            </p>
+                            <p>technologies used: html, css, javascript</p>
+                            <button class="modal-btn" id="password-generator-github-modal-btn">github repo.<span
+                                    class="fas fa-chevron-right modal-btn-fa"></span></button>
+                            <button class="modal-btn" id="password-generator-deployed-modal-btn">deployed app.<span
+                                    class="fas fa-chevron-right modal-btn-fa"></span></button>`
                         </div>
                     </div>
-                </a>
+                </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-3 portfolio-content">
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
-                    <div class="card h-100">
-                        <img src="./assets/images/placeholder1.jpeg" class="card-img-top" alt="...">
-                        <div class="card-img-overlay custom-overlay portfolio-fa">
-                            <h1><span class="fas fa-chevron-right fa-2x"></span></h2>
+
+            <!--placeholder card-->
+            <div class="col-sm-12 col-md-6 col-lg-3 portfolio-content" id="rick-roll">
+                <div class="card h-100 project">
+                    <img src="./assets/images/wallpaperflare.com_wallpaper.jpg" class="card-img-top" alt="..."
+                        id="rick-roll-img">
+                    <div class="card-img-overlay custom-overlay" id="rick-roll-overlay">
+                        <h3>big brain project</h3>
+                        <p>big brain tech</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#rickRollModal" id="rick-roll-btn">learn more.</button>
+                    </div>
+                    <div class="card-body" id="rick-roll-desc">
+                        <p class="card-text" id="featured-content-text">for big brains only.</p>
+                    </div>
+                </div>
+            </div>
+            <!--password generator modal-->
+            <div class="modal fade" id="rickRollModal" tabindex="-2" aria-labelledby="rickRollModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="rickRollModalLabel">the big brain initiative.</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="card-body">
-                            <p class="card-text" id="featured-content-text">if i rick, and you roll. we?...</p>
+                        <div class="modal-body">
+                            <img src="./assets/images/confidential.jpeg" alt="screenshot of deployed highlights hub app"
+                                id="rick-roll-modal-img">
+                            <p>the big brain initiative is an initiavtive for big brains that showcase big brains and a
+                                high level of initiative. through many big brain initiatives the big brain initiavtive
+                                has helped many big brained initiatives all over the world big brain their initiatives.
+                            </p>
+                            <p>technologies used: initiative, big brains</p>
+                            <button class="modal-btn" id="rick-roll-github-modal-btn">github repo.<span
+                                    class="fas fa-chevron-right modal-btn-fa"></span></button>
+                            <button class="modal-btn" id="rick-roll-deployed-modal-btn">deployed app.<span
+                                    class="fas fa-chevron-right modal-btn-fa"></span></button>`
                         </div>
                     </div>
-                </a>
+                </div>
             </div>
-        </div>
 
-
-
-        <!--contact details + contact form i want these to flex side by side, to ontop of each other. -->
-        <section class="page-content" id="contact">
-            <div class="contact-description text">
-                <h2>contact.</h2>
-                <h3>send me an email.</h3>
-                <p>
-                    By this point of my portfolio you probably want to offer me a handsome salary and fancy corner
-                    office.
-                    So please, send me an email with your offer, and I'll pretend it isn't the first one.
-                </p>
+            <div class="row">
+                <div class="col-12 contact-btn-cont">
+                    <h3>want to get in touch?</h3>
+                    <button id="contact-btn">contact me.<span class="fas fa-chevron-right"
+                            id="contact-fa"></span></button>
+                </div>
             </div>
-            <div class="contact-form">
-                <form id="contact-form">
-                    <p>
-                        <label for="name">name.</label>
-                        <br>
-                        <input class="text-input" type="text" id="name">
-                    </p>
-                    <p>
-                        <label for="email">email.</label>
-                        <br>
-                        <input type="text" class="text-input" id="email">
-                    </p>
-                    <p>
-                        <label for="message">message.</label>
-                        <br>
-                        <textarea class="text-input" id="message"></textarea>
-                    </p>
-                    <p>
-                        <button>send.</button>
-                    </p>
-                </form>
-            </div>
-        </section>
     </main>
 
-    <footer>
-        <a href="#home">&copy; 2021 patricktheodore.</a>
-        <div class="footer-links">
-            <a href="#about">about.</a>
-            <a href="#portfolio">featured.</a>
-            <a href="#portfolio">portfolio.</a>
-            <a href="#portfolio">blog.</a>
-            <a href="#contact">contact.</a>
+    <footer class="footer mt-auto custom-footer">
+        <div class="container footer-cont">
+            <a class="footer-content nav-link custom-link" href="./index.html">patricktheodore.</a>
         </div>
     </footer>
 
