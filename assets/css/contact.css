@@ -25,6 +25,7 @@
     font-size: 3rem;
     color: var(--dark);
     padding-bottom: 2rem;
+    padding-top: 5rem;
 }
 
 .section-sub-heading {
@@ -57,6 +58,10 @@
     transform: translateY(-0.1rem);
     transition: transform 150ms;
     box-shadow: 0 0 5px var(--dark);
+}
+
+.contact-me-form-cont {
+    margin: 0;
 }
 
 .form-label {

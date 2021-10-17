@@ -29,3 +29,11 @@ hiBtn.on('click', function() {
     document.location = './index.html#about'
 });
 
+// const profilePic = $('#about-image');   ----- works, just need to update images and respective paths
+
+// profilePic.hover(function() {
+//     $(this).attr('src', './assets/images/schteevvie.jpeg');
+// }, function() {
+//     $(this).attr('src', './assets/images/IMG_3038.jpg')
+// });
+
