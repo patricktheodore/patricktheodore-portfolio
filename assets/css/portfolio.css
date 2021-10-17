@@ -1,0 +1,144 @@
+:root {
+    --dark: #343a40;
+    --light: #e3e8ec;
+    --primary: #5d666b;
+    --secondary: #a7a7a7;
+}
+
+body {
+    background-color: var(--light);
+    color: var(--secondary);
+    width: 100vw;
+}
+
+/*--------------------*/
+
+#weather-dash-overlay,
+#day-planner-overlay,
+#js-quiz-overlay,
+#password-generator-overlay,
+#rick-roll-overlay {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark);
+}
+
+#weather-dash-desc,
+#weatherModalLabel,
+#day-planner-desc,
+#dayPlannerModalLabel,
+#js-quiz-desc,
+#jsQuizModalLabel,
+#password-generator-desc,
+#passwordGeneratorModalLabel,
+#rick-roll-desc,
+#rickRollModalLabel {
+    color: var(--dark);
+}
+
+#weatherModalLabel,
+#dayPlannerModalLabel,
+#jsQuizModalLabel,
+#passwordGeneratorModalLabel,
+#rickRollModalLabel  {
+    text-align: center;
+}
+
+#weather-dash-overlay h3,
+#day-planner-overlay h3,
+#js-quiz-overlay h3,
+#password-generator-overlay h3,
+#rick-roll-overlay h3 {
+    text-align: center;
+}
+
+#weather-dash:hover #weather-dash-overlay,
+#day-planner:hover #day-planner-overlay,
+#js-quiz:hover #js-quiz-overlay,
+#password-generator:hover #password-generator-overlay,
+#rick-roll:hover #rick-roll-overlay {
+    display: flex;
+}
+
+#weather-dash:hover #weather-dash-img,
+#weather-dash:hover #weather-dash-desc,
+#day-planner:hover #day-planner-img,
+#day-planner:hover #day-planner-desc,
+#js-quiz:hover #js-quiz-img,
+#js-quiz:hover #js-quiz-desc,
+#password-generator:hover #password-generator-img,
+#password-generator:hover #password-generator-desc,
+#rick-roll:hover #rick-roll-img,
+#rick-roll:hover #rick-roll-desc   {
+    opacity: 0.2;
+    transition: opacity 150ms;
+}
+
+.modal-btn,
+#day-planner-btn,
+#js-quiz-btn,
+#password-generator-btn,
+#rick-roll-btn,
+#contact-btn {
+    background-color: var(--dark);
+    color: var(--light);
+    cursor: pointer;
+    border: solid 1px var(--dark);
+    font-size: 1rem;
+    border-radius: 4px;
+    text-align: center;
+    padding: 0.5rem;
+    z-index: 1;
+}
+
+.modal-btn:hover,
+#day-planner-btn:hover,
+#js-quiz-btn:hover,
+#password-generator-btn:hover,
+#rick-roll-btn:hover,
+#contact-btn:hover {
+    background-color: var(--light);
+    color: var(--dark);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+    box-shadow: 0 0 5px var(--dark);
+}
+
+#weather-modal-img,
+#day-planner-modal-img,
+#js-quiz-modal-img,
+#password-generator-modal-img,
+#rick-roll-modal-img {
+    margin-bottom: 2rem;
+    border: solid 1px var(--dark);
+    border-radius: 4px;
+    box-shadow: 0 0 5px var(--dark);
+}
+
+.project {
+    border: solid 1px var(--dark);
+    border-radius: 4px;
+    box-shadow: 0 0 5px var(--dark);
+}
+
+.portfolio-content,
+.portfolio-content-cont {
+    margin: 5rem 0;
+}
+
+.modal-btn {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contact-btn-cont {
+    text-align: center;
+    color: var(--dark);
+    margin-top: 6rem;
+}
+
+#contact-btn {
+    margin-top: 2rem;
+}

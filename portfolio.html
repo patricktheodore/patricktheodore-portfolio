@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c1b942df5a.js" crossorigin="anonymous"></script>
+    <title>patricktheodore - portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/portfolio.css">
+    <link rel="stylesheet" href="./assets/css/mediabreaks.css">
+
+</head>
+
+<body>
+
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg sitcky-top navbar-dark bg-dark custom-nav">
+            <div class="container-fluid">
+                <a class="navbar-brand custom-brand" href="./index.html">patricktheodore.</a>
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="fas fa-bars fa-2x" id="burger-nav"></span>
+                </button>
+                <div class="collapse navbar-collapse custom-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-links-container">
+                        <li class="nav-item">
+                            <a class="nav-link custom-link" href="#about">about.</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link custom-link" href="#featured">featured.</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link custom-link" href="./portfolio.html">portfolio.</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link custom-link" href="./portfolio.html">blog.</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link custom-link" href="./contact.html">contact.</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 social-navs-container">
+                        <li class="nav-item social-navs ">
+                            <a class="nav-link custom-link fab fa-facebook fa-2x" title="facebook"
+                                href="https://www.facebook.com/patricktheodore-104912218595856" target="_blank"></a>
+                        </li>
+                        <li class="nav-item social-navs">
+                            <a class="nav-link custom-link fab fa-linkedin-in fa-2x" title="linkedin"
+                                href="https://www.linkedin.com/in/patrick-sara-8186a3170/" target="_blank"></a>
+                        </li>
+                        </li>
+                        <li class="nav-item social-navs">
+                            <a class="nav-link custom-link fab fa-github fa-2x" title="github"
+                                href="https://github.com/patricktheodore" target="_blank"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+
+    <main class="container">
+        <div class="row page-content" id="portfolio">
+            <div class="col-sm-12 col-md-12 col-lg-6 portfolio-content-cont">
+                <h2 class="display-2 section-heading">portfolio.</h2>
+                <h3 class="display-3 section-sub-heading">check out some of my latest projects.</h3>
+                <div>
+                    <p class="section-text-content">
+                        here are some small apps developed over the course of my 6 month full stack web development
+                        bootcamp, and a couple of little pet projects built purely out of interest. as my skillset
+                        grows, I plan to update these into fully fledged applications. I enjoy revisiting old projects
+                        and revamping them. I believe that nothing is perfect and there is always room for improvement.
+                    </p>
+                </div>
+            </div>
+            <!--weather dash-->
+            <div class="col-sm-12 col-md-12 col-lg-6 portfolio-content" id="weather-dash">
+                <div class="card h-100 project">
+                    <img src="./assets/images/placeholder3.jpeg" class="card-img-top" alt="..." id="weather-dash-img">
+                    <div class="card-img-overlay custom-overlay" id="weather-dash-overlay">
+                        <h3>weather-dashboard.</h3>
+                        <p>javascript/local storage/moment.js/openweather api</p>
+                        <button type="button" class="btn btn-primary modal-btn" data-bs-toggle="modal"
+                            data-bs-target="#weatherModal" id="weather-btn">learn more.</button>
+                    </div>
+                    <div class="card-body" id="weather-dash-desc">
+                        <p class="card-text" id="featured-content-text">live weather forecast application.</p>
+                    </div>
+                </div>
+            </div>
+            <!--weather modal-->
+            <div class="modal fade" id="weatherModal" tabindex="-2" aria-labelledby="weatherModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="weatherModalLabel">weather-dashboard.</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./assets/images/weather-dash.png" alt="screenshot of deployed highlights hub app"
+                                id="weather-modal-img">
+                            <p>weather dash is an interactive application that takes user input and displays the current
+                                weather conditions plus the weather forecast for the next 5 days. searches are saved in
+                                local storage and dsisplayed for the user to reference again if needed.
+                            </p>
+                            <p>technologies used: javascript, local storage, openweather api, moment.js</p>
+                            <button class="modal-btn" id="weather-github-modal-btn">github repo.<span
+                                    class="fas fa-chevron-right modal-btn-fa"></span></button>
+                            <button class="modal-btn" id="weather-deployed-modal-btn">deployed app.<span
+                                    class="fas fa-chevron-right modal-btn-fa"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--day planner-->
+            <div class="col-sm-12 col-md-6 col-lg-3 portfolio-content" id="day-planner">
+                <div class="card h-100 project">
+                    <img src="./assets/images/placeholder2.jpeg" class="card-img-top" alt="..." id="day-planner-img">
+                    <div class="card-img-overlay custom-overlay" id="day-planner-overlay">
+                        <h3>day-planner.</h3>
+                        <p>javascript/moment.js/local storage</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#dayPlannerModal" id="day-planner-btn">learn more.</button>
+                    </div>
+                    <div class="card-body" id="day-planner-desc">
+                        <p class="card-text" id="featured-content-text">an elegant workday planner.</p>
+                    </div>
+                </div>
+            </div>
+            <!--day-planner-modal-->
+            <div class="modal fade" id="dayPlannerModal" tabindex="-2" aria-labelledby="dayPlannerModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="dayPlannerModalLabel">work-day-scheduler.</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./assets/images/day-planner-demp.png" alt="screenshot of deployed highlights hub app"
+                                id="day-planner-modal-img">
+                            <p>an elegant work day scheduler, which dynamically loads work day hours and lets the user plan their day ahead. tasks are saved to local storage and will load after navigating away. 
+                            </p>
+                            <p>technologies used: javascript, local storage, moment.js</p>
+                            <button class="modal-btn" id="day-planner-github-modal-btn">github repo.<span
+                                    class="fas fa-chevron-right modal-btn-fa"></span></button>
+                            <button class="modal-btn" id="day-planner-deployed-modal-btn">deployed app.<span
+                                    class="fas fa-chevron-right modal-btn-fa"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--js-quiz-->
+            <div class="col-sm-12 col-md-6 col-lg-3 portfolio-content" id="js-quiz">
+                <div class="card h-100 project">
+                    <img src="./assets/images/placeholder1.jpeg" class="card-img-top" alt="..." id="js-quiz-img">
+                    <div class="card-img-overlay custom-overlay" id="js-quiz-overlay">
+                        <h3>javascript-quiz</h3>
+                        <p>javascript/local storage</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#jsQuizModal" id="js-quiz-btn">learn more.</button>
+                    </div>
+                    <div class="card-body" id="js-quiz-desc">
+                        <p class="card-text" id="featured-content-text">test your javascript knowledge.</p>
+                    </div>
+                </div>
+            </div>
+            <!--jsquiz-->
+            <div class="modal fade" id="jsQuizModal" tabindex="-2" aria-labelledby="jsQuizModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="jsQuizModalLabel">javascript-quiz.</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./assets/images/js-quiz-demo.png" alt="screenshot of deployed highlights hub app"
+                                id="js-quiz-modal-img">
+                            <p>an interactive javascript quiz game, where the user is asked to answer various questions about javascript. scores are calculated, saved in local storage and displayed at the end. 
+                            </p>
+                            <p>technologies used: html, css, javascript, local storage</p>
+                            <button class="modal-btn" id="js-quiz-github-modal-btn">github repo.<span
+                                    class="fas fa-chevron-right modal-btn-fa"></span></button>
+                            <button class="modal-btn" id="js-quiz-deployed-modal-btn">deployed app.<span
+                                    class="fas fa-chevron-right modal-btn-fa"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--password generator-->
+            <div class="col-sm-12 col-md-6 col-lg-3 portfolio-content" id="password-generator">
+                <div class="card h-100 project">
+                    <img src="./assets/images/wallpaperflare.com_wallpaper.jpg" class="card-img-top" alt="..."
+                        id="password-generator-img">
+                    <div class="card-img-overlay custom-overlay" id="password-generator-overlay">
+                        <h3>password generator.</h3>
+                        <p>javascript.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#passwordGeneratorModal" id="password-generator-btn">learn more.</button>
+                    </div>
+                    <div class="card-body" id="password-generator-desc">
+                        <p class="card-text" id="featured-content-text">generate a random password.</p>
+                    </div>
+                </div>
+            </div>
+            <!--password generator modal-->
+            <div class="modal fade" id="passwordGeneratorModal" tabindex="-2"
+                aria-labelledby="passwordGeneratorModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="passwordGeneratorModalLabel">random-password-generator.</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./assets/images/password-generator.png" alt="screenshot of deployed highlights hub app"
+                                id="password-generator-modal-img">
+                            <p>a simple password generator powered by user inputs. select a password length, lowercase, uppercase, special symbols and/or numbers. 
+                            </p>
+                            <p>technologies used: html, css, javascript</p>
+                            <button class="modal-btn" id="password-generator-github-modal-btn">github repo.<span
+                                    class="fas fa-chevron-right modal-btn-fa"></span></button>
+                            <button class="modal-btn" id="password-generator-deployed-modal-btn">deployed app.<span
+                                    class="fas fa-chevron-right modal-btn-fa"></span></button>`
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--placeholder card-->
+            <div class="col-sm-12 col-md-6 col-lg-3 portfolio-content" id="rick-roll">
+                <div class="card h-100 project">
+                    <img src="./assets/images/wallpaperflare.com_wallpaper.jpg" class="card-img-top" alt="..."
+                        id="rick-roll-img">
+                    <div class="card-img-overlay custom-overlay" id="rick-roll-overlay">
+                        <h3>big brain project</h3>
+                        <p>big brain tech</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#rickRollModal" id="rick-roll-btn">learn more.</button>
+                    </div>
+                    <div class="card-body" id="rick-roll-desc">
+                        <p class="card-text" id="featured-content-text">for big brains only.</p>
+                    </div>
+                </div>
+            </div>
+            <!--password generator modal-->
+            <div class="modal fade" id="rickRollModal" tabindex="-2" aria-labelledby="rickRollModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="rickRollModalLabel">the big brain initiative.</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./assets/images/confidential.jpeg" alt="screenshot of deployed highlights hub app"
+                                id="rick-roll-modal-img">
+                            <p>the big brain initiative is an initiavtive for big brains that showcase big brains and a
+                                high level of initiative. through many big brain initiatives the big brain initiavtive
+                                has helped many big brained initiatives all over the world big brain their initiatives.
+                            </p>
+                            <p>technologies used: initiative, big brains</p>
+                            <button class="modal-btn" id="rick-roll-github-modal-btn">github repo.<span
+                                    class="fas fa-chevron-right modal-btn-fa"></span></button>
+                            <button class="modal-btn" id="rick-roll-deployed-modal-btn">deployed app.<span
+                                    class="fas fa-chevron-right modal-btn-fa"></span></button>`
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 contact-btn-cont">
+                    <h3>like what you see?</h3>
+                    <button id="contact-btn">contact me.<span class="fas fa-chevron-right"
+                            id="contact-fa"></span></button>
+                </div>
+            </div>
+    </main>
+
+    <footer class="footer mt-auto custom-footer">
+        <div class="container footer-cont">
+            <a class="footer-content nav-link custom-link" href="./index.html">patricktheodore.</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./assets/js/portfolio.js"></script>
+</body>
+
+</html>

@@ -1,82 +1,85 @@
-/*insert media breaks here
+@media screen and (max-width:1200px) {
+  .custom-profile-img-container {
+    padding: 0;
+    margin: 2rem 0;
+  }
 
-nav breaks at 960px width - insert burger bar from max 968px 
-about 960px also, display photo underneath or above text. 
-portfolio doesnt look good around 1000px - change to display block
-at 668px change portfolio cards to flex column
-contact at 1000px change to display form underneath, width of text = 100%
-footer, at 1000px media break, put flex anchors under patricktheodore, at 668, make it flex col. 
-*/
+  #about {
+    margin-top: 5rem;
+  }
+}
 
 @media screen and (max-width: 992px) {
-    header {
-        flex-direction: column;
-        justify-content: center;
-        height: fit-content;
-    }
-    nav {
-        flex-direction: column;
-    }
-    header h1,
-    .quick-links,
-    .socials {
-        margin-bottom: 1rem;
-    }
-  .page-content {
-    flex-direction: column;
+  .custom-brand, 
+  .fa-bars,
+  .custom-toggler,
+  #burger-nav {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
   }
-  .text {
-    flex-direction: column;
+
+  .nav-links-container, 
+  .social-navs-container {
+    justify-content: center;
     align-items: center;
-    max-width: 90%;
+    margin-left: 0;
   }
-  #about-image {
-    width: 50%;
-    height: 50%;
-    padding: 0 0 5% 0;
+
+  .nav-link,
+  .fa-2x {
+    padding: 1rem;
+    margin: 0 2rem;
   }
-  .contact-form {
-    margin: 0 0 4rem 0;
+
+  .project,
+  .portfolio-content {
+    margin: 2rem 0;
   }
-  .featured {
-    flex-direction: column;
+
+  .portfolio-content-cont {
+    margin-bottom: 0;
   }
-.scratch {
-    max-width: 66%;
-    margin: 0%;
+
+  .tech-profs {
+    padding: 2rem;
   }
-  footer {
-      flex-direction: column;
-      border-bottom: 1.5rem;
+
+  .tech-profs-cont {
+    margin: 5rem 0;
   }
-  .footer-links {
-      width: auto;
+
+  .tech-prof-list {
+    margin-bottom: 4rem;
   }
-.footer-links a {
-    padding: 0 1rem;
+
+  .center-col {
+    border: none;
+    border-top: 1px solid var(--secondary);
+    border-bottom: 1px solid var(--secondary);
+    padding-top: 4rem;
+    margin-bottom: 2rem;
+  }
 }
+
+@media screen and (max-width: 768px) {
+  .portfolio-fa {
+    padding: 0;
+  }
 }
 
-@media screen and (max-width:768px) {
-    #thumbs {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;        
-    }
+@media screen and (max-width: 460px) {
+  .section-heading {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .section-text-content {
+    padding: 0;
+    margin: 2rem 0;
+  }
 
-    #thumbs li {
-        max-width: 66%;
-        min-width: 66%;
-        margin: 0 0 2% 0;
-    }
-
-    .quick-links {
-        flex-direction: column;
-    }
-
-    .quick-links li {
-        margin-bottom: 0.5rem;
-        font-size: 1.5rem;
-    }
-    
+  .featured-content {
+    margin-top: 2rem;
+  }
 }
