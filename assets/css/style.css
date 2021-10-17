@@ -142,6 +142,13 @@ body {
 
 #featured-content-text {
     width: 80%;
+    color: var(--dark);
+}
+
+.highlights-hub {
+    border: solid 1px var(--dark);
+    border-radius: 4px;
+    box-shadow: 0 0 5px var(--dark);
 }
 
 .fa-chevron-right {
@@ -248,6 +255,7 @@ body {
     border-radius: 4px;
     box-shadow: 0 0 5px var(--dark);
 }
+
 /* .featured-content:hover .fa-chevron-right,
 .portfolio-content:hover .fa-chevron-right {
     display: inline;
