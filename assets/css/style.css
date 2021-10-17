@@ -261,6 +261,57 @@ body {
     display: inline;
 } */
 
+/*tech profs*/
+.tech-profs-cont {
+    margin: 5rem;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 2rem;
+    margin-bottom: 10rem;
+    padding: 3rem 1rem;
+    box-shadow: 0 0 5px var(--dark);
+}
+
+.tech-profs-header {
+    font-size: 1.5rem;
+    color: var(--dark);
+    padding: 2rem 0;
+    font-weight: bold;
+}
+
+.fa-pencil-ruler,
+.fa-laptop-code,
+.fa-cog {
+    margin: 2rem 0;
+    font-size: 3rem;
+    color: var(--dark);
+}
+
+.tech-profs-desc {
+    color: var(--dark);
+    margin-bottom: 2rem;
+}
+
+.tech-profs-sub-header {
+    color: var(--dark);
+    font-size: 1.3rem;
+}
+
+.tech-prof-list {
+    list-style: none;
+    padding: 0;
+    color: var(--dark);
+    line-height: 2;
+}
+
+.center-col {
+    border-left: 1px solid var(--secondary);
+    border-right: 1px solid var(--secondary);
+}
+
+
+/*----------*/
+
 .featured-content:hover,
 .portfolio-content:hover { 
     transform: translateY(-0.2rem);
