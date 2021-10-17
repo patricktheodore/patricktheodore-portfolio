@@ -14,6 +14,7 @@
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/contact.css">
     <link rel="stylesheet" href="./assets/css/mediabreaks.css">
 
 </head>
@@ -72,32 +73,55 @@
 
 
     <main class="container-fluid">
-            <!--contact details + contact form i want these to flex side by side, to ontop of each other. -->
-            <div class="row page-content justify-content-center" id="contact-me">
-                <div class="col-sm-12 col-md-10 col-lg-8 justify-content-center">
-                    <h2 class="display-2 section-heading">contact me.</h2>
-                    <form>
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Email address</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                        </div>
-                        <div class="mb-3">
-                          <label for="exampleInputPassword1" class="form-label">Password</label>
-                          <input type="password" class="form-control" id="exampleInputPassword1">
-                        </div>
-                        <div class="mb-3 form-check">
-                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                      </form>
-                </div>
+        <!--contact details + contact form i want these to flex side by side, to ontop of each other. -->
+        <div class="row page-content justify-content-center" id="contact-me">
+            <div class="col-sm-12 col-md-10 justify-content-center">
+                <h2 class="contact-heading">thanks for taking the time to get in touch.</h2>
+                <h2 class="section-sub-heading">send me an email, or get in touch via social media.</h2>
+            </div>
+        </div>
+
+        <div class="row page-content justify-content-center">
+            <div class="col-sm-12 col-md-18 col-lg-6">
+                <form id="email-form">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6"><label for="name" class="form-label">name.</label>
+                            <input type="text" class="form-control" placeholder="" aria-label="name"></div>
+                        <div class="col-sm-12 col-md-6"><label for="emailInput" class="form-label">email address.</label>
+                            <input type="email" class="form-control" id="emailInput" placeholder=""></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12"><label for="textarea" class="form-label" id="textarea-label">message.</label>
+                            <textarea class="form-control" id="textarea" rows="6"></textarea></div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-sm-12 text-center"><button type="submit" class="btn btn-primary" id="contact-submit-btn">submit</button></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
     </main>
 
     <footer class="footer mt-auto custom-footer">
-        <div class="container footer-cont">
-            <a class="footer-content nav-link custom-link" href="./index.html">patricktheodore.</a>
+        <div class="row container-fluid gx-0 justify-content-center">
+            <div class="col-sm-8 d-flex justify-content-center">
+                <div class="row justify-content-center footer-socials">
+                    <div class="col-sm-3 footer-social-link"><a class="nav-link custom-link fab fa-facebook fa-2x" title="facebook"
+                        href="https://www.facebook.com/patricktheodore-104912218595856" target="_blank"></a></div>
+                    <div class="col-sm-3 footer-social-link"><a class="nav-link custom-link fab fa-linkedin-in fa-2x" title="linkedin"
+                        href="https://www.linkedin.com/in/patrick-sara-8186a3170/" target="_blank"></a></div>
+                    <div class="col-sm-3 footer-social-link"><a class="nav-link custom-link fab fa-github fa-2x" title="github"
+                        href="https://github.com/patricktheodore" target="_blank"></a></div>
+                    <div class="col-sm-3 footer-social-link"><a class="nav-link custom-link fab fa-instagram fa-2x" title="instagram"
+                        href="https://github.com/patricktheodore" target="_blank"></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="row gx-0">
+            <div class="col footer-cont">
+                <a class="footer-content nav-link custom-link" href="./index.html">patricktheodore.</a>
+            </div>
         </div>
     </footer>
 
