@@ -24,17 +24,17 @@ function submitHandler(event) {
 
     // validation regex for email. 
     if (!validateEmail(email)) {
-        window.alert('please enter a valid email addres'); //sweet alert library (bootstrap dialogues, modals?)
+        swal("oh no!", "please enter a valid email.", "error"); //sweet alert library (bootstrap dialogues, modals?)
         return 
     }
 
     if (name === '') {
-        window.alert('please enter your name');
+        swal("ooops!", "please enter your name.", "error");
         return
     }
 
     if (textarea === '') {
-        window.alert('please enter a comment');
+        swal("bugger!", "please write a comment so i know how to respond.", "error");
         return
     }
 
