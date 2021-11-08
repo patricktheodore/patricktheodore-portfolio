@@ -1,15 +1,4 @@
-// entry.137476477: nammeee
-// entry.1456617042: emaill
-// entry.1337743317: commenntttt
-// dlut: 1634540961476
-// fvv: 1
-// draftResponse: [null,null,"-124436678167771972"]
-// pageHistory: 0
-// fbzx: -124436678167771972
-
-// Request URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSfaif8aM506w6fEVixhOcXswHaVZoiZiq1UCZIqLYwTeuWqpA/formResponse
-
-$('#email-form').on('submit', submitHandler); 
+$('#email-form').on('submit', submitHandler);
 
 function submitHandler(event) {
     event.preventDefault();
@@ -24,17 +13,17 @@ function submitHandler(event) {
 
     // validation regex for email. 
     if (!validateEmail(email)) {
-        swal("oh no!", "please enter a valid email.", "error"); //sweet alert library (bootstrap dialogues, modals?)
-        return 
+        Swal.fire("oh no!", "please enter a valid email.", "error"); //sweet alert library (bootstrap dialogues, modals?)
+        return
     }
 
     if (name === '') {
-        swal("ooops!", "please enter your name.", "error");
+        Swal.fire("ooops!", "please enter your name.", "error");
         return
     }
 
     if (textarea === '') {
-        swal("bugger!", "please write a comment so i know how to respond.", "error");
+        Swal.fire("bugger!", "please write a comment so i know how to respond.", "error");
         return
     }
 
@@ -48,9 +37,9 @@ function submitHandler(event) {
     const formdata = new FormData();
 
     for (const key in payload) {
-        
+
         formdata.append(key, payload[key])
-        
+
     }
 
     // send request
@@ -62,13 +51,13 @@ function submitHandler(event) {
         },
         body: formdata,
     }).then((response) => {
-        if (response.status === 200){
+        if (response.status === 200) {
             // suceess
             // clear the fields
             email.val('');
             name.val('');
             textarea.val('');
-        }else{
+        } else {
             // failure
         }
     })
@@ -84,13 +73,42 @@ function resetForm() {
     $('#nameInput').val('');
     $('#textareaInput').val('');
 
-    swal({
+    Swal.fire({
         title: "Message Sent!",
         text: "Thank you!",
         icon: "success",
         button: "Aww yiss!",
-      });
+    });
 }
+
+
+$('#resume-btn').on('click', (event) => {
+    event.preventDefault();
+
+    Swal.fire({
+        title: 'Would you like to download a copy of my resume?',
+        showDenyButton: true,
+        showCancelButton: false,
+        confirmButtonText: 'Download!',
+        denyButtonText: 'Cancel',
+        footer: '<a href="https://drive.google.com/file/d/1CCP2GT1o6WA-sjPqbClR3PsP5UcT9Sff/view?usp=sharing" target="_blank">View on Google Docs Instead.</a>'
+    }).then((result) => {
+        /* Read more about isConfirmed, isDenied below */
+        if (result.isConfirmed) {
+            Swal.fire('Success! I look forward to hearing from you.', '', 'success');
+            var link = document.createElement('a');
+            link.href = './assets/dist/patrick sara - resume.pdf';
+            link.download = 'patricktheodore - resume.';
+            link.dispatchEvent(new MouseEvent('click'));
+
+        } else if (result.isDenied) {
+            Swal.fire("OK, don't then... but just know... you have hurt my feelings.", '', 'error')
+        }
+    }) //code a download and a view link
+
+
+}
+);
 
 
 //google recaptcha
