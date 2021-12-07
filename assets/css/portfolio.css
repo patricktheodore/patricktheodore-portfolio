@@ -142,3 +142,7 @@ body {
 #contact-btn {
     margin-top: 2rem;
 }
+
+.active {
+    color: aquamarine
+}

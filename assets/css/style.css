@@ -19,6 +19,7 @@ body {
     letter-spacing: -0.2rem;
 }
 
+
 .social-navs-container {
     flex-direction: row;
 }
@@ -32,6 +33,7 @@ body {
     margin-right: 1rem;
     color: white;
 }
+
 
 .custom-toggler {
     border: none;
@@ -307,6 +309,10 @@ body {
 .center-col {
     border-left: 1px solid var(--secondary);
     border-right: 1px solid var(--secondary);
+}
+
+.active {
+    color: aquamarine !important;
 }
 
 
