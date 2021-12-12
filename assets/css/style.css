@@ -19,6 +19,7 @@ body {
     letter-spacing: -0.2rem;
 }
 
+
 .social-navs-container {
     flex-direction: row;
 }
@@ -32,6 +33,7 @@ body {
     margin-right: 1rem;
     color: white;
 }
+
 
 .custom-toggler {
     border: none;
@@ -145,7 +147,7 @@ body {
     color: var(--dark);
 }
 
-.highlights-hub {
+.featured-project {
     border: solid 1px var(--dark);
     border-radius: 4px;
     box-shadow: 0 0 5px var(--dark);
@@ -159,6 +161,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--dark);
 }
 
 #featured-overlay {
@@ -176,7 +179,7 @@ body {
     display: flex;
 }
 
-.featured-content:hover #featured-image,
+.featured-content:hover #featured-porject-img,
 .featured-content:hover #featured-content-text {
     opacity: 0.2;
     transition: opacity 150ms;
@@ -184,37 +187,17 @@ body {
 
 
 #featured-btn {
-    background-color: var(--light);
-    color: var(--dark);
-    cursor: pointer;
-    border: solid 1px var(--dark);
-    font-size: 1rem;
-    border-radius: 4px;
+    border-radius: 6px;
+    border: solid 1px var(--primary);
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
     text-align: center;
-    padding: 0.5rem;
+    text-decoration: none;
+    vertical-align: middle;
 }
 
-#featured-btn:hover {
-    transform: translateY(-0.1rem);
-    transition: transform 150ms;
-    color: var(--light);
-    background-color: var(--primary);
-}
-
-.modal-btn,
-#see-my-projects-btn {
-    background-color: var(--dark);
-    color: var(--light);
-    cursor: pointer;
-    border: solid 1px var(--dark);
-    font-size: 1rem;
-    border-radius: 4px;
-    text-align: center;
-    padding: 0.5rem;
-}
-
-.modal-btn:hover,
-#see-my-projects-btn:hover {
+.modal-btn:hover {
     background-color: var(--light);
     color: var(--dark);
     transform: translateY(-0.1rem);
@@ -223,14 +206,10 @@ body {
 }
 
 .modal-btn:hover .modal-btn-fa,
-#see-my-projects-btn:hover #project-fa,
 #contact-btn:hover #contact-fa {
     color: var(--dark);
 }
 
-#see-my-projects-btn {
-    padding: 1rem;
-}
 
 .project-btn-cont {
     text-align: center;
@@ -241,10 +220,10 @@ body {
     margin-bottom: 2rem;
 }
 
-#project-fa,
 .modal-btn-fa,
 #contact-fa {
     padding-left: 2rem;
+    padding-right: 1rem;
     display: inline;
     color: var(--light);
 }
@@ -256,10 +235,73 @@ body {
     box-shadow: 0 0 5px var(--dark);
 }
 
-/* .featured-content:hover .fa-chevron-right,
-.portfolio-content:hover .fa-chevron-right {
+/* button design */
+
+.custom-button-one {
+    background-color: var(--dark);
+    color: var(--light);
+    cursor: pointer;
+    padding: 1rem 0 1rem 2.5rem;
+    border-radius: 6px;
+    border: solid 1px var(--primary);
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.custom-button-one:hover {
+    color: var(--light);
+    transform: translateX(0.25rem);
+    transition: transform 300ms;
+    box-shadow: 0 0 5px var(--dark);
+}
+
+.button-fa,
+#github-fa,
+#app-fa {
+    padding-left: 1rem;
+    padding-right: 1rem;
     display: inline;
-} */
+    opacity: 0;
+    color: aquamarine;
+    font-size: 1rem;
+}
+
+.custom-button-one:hover #project-fa,
+#featured-github-modal-btn:hover #github-fa,
+#featured-deployed-modal-btn:hover #app-fa  {
+    opacity: 1;
+}
+
+#featured-github-modal-btn:hover #github-fa,
+#featured-deployed-modal-btn:hover #app-fa {
+    color: var(--dark);
+}
+
+#featured-btn {
+    padding: 0.5rem 2rem;
+}
+
+#featured-btn:hover,
+#featured-github-modal-btn:hover,
+#featured-deployed-modal-btn:hover
+ {
+    background-color: aquamarine;
+    color: var(--dark);
+}
+
+#featured-github-modal-btn,
+#featured-deployed-modal-btn {
+    padding: 0.5rem 0rem 0.5rem 2.5rem;
+}
+
+
+ /**/
+
+
 
 /*tech profs*/
 .tech-profs-cont {
@@ -307,6 +349,10 @@ body {
 .center-col {
     border-left: 1px solid var(--secondary);
     border-right: 1px solid var(--secondary);
+}
+
+.active {
+    color: aquamarine !important;
 }
 
 

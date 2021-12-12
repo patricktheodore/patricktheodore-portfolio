@@ -36,7 +36,7 @@
                             <a class="nav-link custom-link" href="./index.html">about.</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link custom-link" href="./portfolio.html">portfolio.</a>
+                            <a class="nav-link custom-link active" href="./portfolio.html">portfolio.</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link custom-link" href="./portfolio.html">blog.</a>
@@ -83,213 +83,466 @@
                     </p>
                 </div>
             </div>
-            <!--weather dash-->
-            <div class="col-sm-12 col-md-12 col-lg-6 portfolio-content" id="weather-dash">
+
+            <!-- featured card -->
+            <div class="col-sm-12 col-md-12 col-lg-6 featured-content" id="featured">
                 <div class="card h-100 project">
-                    <img src="./assets/images/placeholder3.jpeg" class="card-img-top" alt="..." id="weather-dash-img">
-                    <div class="card-img-overlay custom-overlay" id="weather-dash-overlay">
-                        <h3>weather-dashboard.</h3>
+                    <img src="./assets/images/placeholder3.jpeg" class="card-img-top" alt="..."
+                        id="featured-project-img">
+                    <div class="card-img-overlay custom-overlay" id="featured-project-overlay">
+                        <h3>featured-projectboard.</h3>
                         <p>javascript/local storage/moment.js/openweather api</p>
-                        <button type="button" class="btn btn-primary modal-btn" data-bs-toggle="modal"
-                            data-bs-target="#weatherModal" id="weather-btn">learn more.</button>
+                        <button type="button" class="btn btn-primary custom-button-one" data-bs-toggle="modal"
+                            data-bs-target="#featuredProject" id="featured-btn">learn more.</button>
                     </div>
-                    <div class="card-body" id="weather-dash-desc">
+                    <div class="card-body" id="featured-project-desc">
                         <p class="card-text" id="featured-content-text">live weather forecast application.</p>
                     </div>
                 </div>
             </div>
-            <!--weather modal-->
-            <div class="modal fade" id="weatherModal" tabindex="-2" aria-labelledby="weatherModalLabel"
+            <!--featured modal-->
+            <div class="modal fade" id="featuredProject" tabindex="-2" aria-labelledby="featuredProjectLabel"
                 aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="weatherModalLabel">weather-dashboard.</h5>
+                            <h5 class="modal-title" id="featuredProjectLabel">featured-projectboard.</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <img src="./assets/images/weather-dash.png" alt="screenshot of deployed highlights hub app"
-                                id="weather-modal-img">
-                            <p>weather dash is an interactive application that takes user input and displays the current
-                                weather conditions plus the weather forecast for the next 5 days. searches are saved in
+                            <img src="./assets/images/featured-project.png"
+                                alt="screenshot of deployed highlights hub app" id="featured-project-modal-img">
+                            <p>featured dash is an interactive application that takes user input and displays the
+                                current
+                                featured conditions plus the featured forecast for the next 5 days. searches are saved
+                                in
                                 local storage and dsisplayed for the user to reference again if needed.
                             </p>
-                            <p>technologies used: javascript, local storage, openweather api, moment.js</p>
-                            <button class="modal-btn" id="weather-github-modal-btn">github repo.<span
-                                    class="fas fa-chevron-right modal-btn-fa"></span></button>
-                            <button class="modal-btn" id="weather-deployed-modal-btn">deployed app.<span
-                                    class="fas fa-chevron-right modal-btn-fa"></span></button>
+                            <p>technologies used: javascript, local storage, openfeatured api, moment.js</p>
+                            <button class="custom-button-one" id="featured-github-modal-btn">github repo<span
+                                    class="fas fa-chevron-right modal-btn-fa" id="github-fa"></span></button>
+                            <button class="custom-button-one" id="featured-deployed-modal-btn">deployed app<span
+                                    class="fas fa-chevron-right modal-btn-fa" id="app-fa"></span></button>
                         </div>
                     </div>
                 </div>
             </div>
 
-
-            <!--day planner-->
-            <div class="col-sm-12 col-md-6 col-lg-3 portfolio-content" id="day-planner">
+            <!-- readmegenerator -->
+            <div class="col-sm-12 col-md-6 col-lg-3 portfolio-content" id="readmeGenerator">
                 <div class="card h-100 project">
-                    <img src="./assets/images/placeholder2.jpeg" class="card-img-top" alt="..." id="day-planner-img">
-                    <div class="card-img-overlay custom-overlay" id="day-planner-overlay">
-                        <h3>day-planner.</h3>
-                        <p>javascript/moment.js/local storage</p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#dayPlannerModal" id="day-planner-btn">learn more.</button>
+                    <img src="./assets/images/placeholder1.jpeg" class="card-img-top"
+                        alt="screenshot of readmeGenerator" id="readmeGenerator-img">
+                    <div class="card-img-overlay custom-overlay" id="readmeGenerator-overlay">
+                        <h3 class="overlayHeader">Perfect Readme Generator</h3>
+                        <p>Technologies Used</p> 
+                        <button type="button" class="btn custom-button-one learn-more-btn" data-bs-toggle="modal"
+                            data-bs-target="#readmeGeneratorModal">learn more.</button>
                     </div>
-                    <div class="card-body" id="day-planner-desc">
-                        <p class="card-text" id="featured-content-text">an elegant workday planner.</p>
+                    <div class="card-body" id="readmeGenerator-desc">
+                        <p class="card-text" id="featured-content-text">live weather forecast application.</p>
                     </div>
                 </div>
             </div>
-            <!--day-planner-modal-->
-            <div class="modal fade" id="dayPlannerModal" tabindex="-2" aria-labelledby="dayPlannerModalLabel"
+            <!--modal-->
+            <div class="modal fade" id="readmeGeneratorModal" tabindex="-2" aria-labelledby="readmeGeneratorLabel"
                 aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="dayPlannerModalLabel">work-day-scheduler.</h5>
+                            <h5 class="modal-title" id="readmeGeneratorLabel">Project Title</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="modal-body">
-                            <img src="./assets/images/day-planner-demp.png" alt="screenshot of deployed highlights hub app"
-                                id="day-planner-modal-img">
-                            <p>an elegant work day scheduler, which dynamically loads work day hours and lets the user plan their day ahead. tasks are saved to local storage and will load after navigating away. 
+                        <div class="modal-body custom-body">
+                            <img src="###4###" alt="screenshot of deployed app" class="modalImg" id="">
+                            <p>Project Description
                             </p>
-                            <p>technologies used: javascript, local storage, moment.js</p>
-                            <button class="modal-btn" id="day-planner-github-modal-btn">github repo.<span
-                                    class="fas fa-chevron-right modal-btn-fa"></span></button>
-                            <button class="modal-btn" id="day-planner-deployed-modal-btn">deployed app.<span
+                            <p>Technologies Used</p>
+                            <button class="custom-button-one inner-modal-btn" id="readmeGenerator-github-modal-btn">github repo<span
                                     class="fas fa-chevron-right modal-btn-fa"></span></button>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- /readmegenerator -->
 
-            <!--js-quiz-->
-            <div class="col-sm-12 col-md-6 col-lg-3 portfolio-content" id="js-quiz">
+            <!-- highlightsHub -->
+            <div class="col-sm-12 col-md-6 col-lg-3 portfolio-content" id="highlightsHub"> <!-- add project title to id -->
                 <div class="card h-100 project">
-                    <img src="./assets/images/placeholder1.jpeg" class="card-img-top" alt="..." id="js-quiz-img">
-                    <div class="card-img-overlay custom-overlay" id="js-quiz-overlay">
-                        <h3>javascript-quiz</h3>
-                        <p>javascript/local storage</p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#jsQuizModal" id="js-quiz-btn">learn more.</button>
+                    <!-- add img source below -->
+                    <img src="./assets/images/placeholder3.jpeg" class="card-img-top" alt="..." 
+                        id="highlightsHub-img">
+                    <div class="card-img-overlay custom-overlay" id="highlightsHub-overlay"> <!-- add project title before overlay in id -->
+                        <h3 class="overlayHeader">Highlights Hub</h3> <!-- project title -->
+                        <p>Technologies Used</p> <!-- technologies used -->
+                        <button type="button" class="btn custom-button-one  learn-more-btn" data-bs-toggle="modal"
+                            data-bs-target="#highlightsHubModal" >learn more.</button> <!-- data-bs-target needs to match modal id  -->
                     </div>
-                    <div class="card-body" id="js-quiz-desc">
-                        <p class="card-text" id="featured-content-text">test your javascript knowledge.</p>
+                    <div class="card-body" id="highlightsHub-desc">
+                        <p class="card-text">live weather forecast application.</p>
                     </div>
                 </div>
             </div>
-            <!--jsquiz-->
-            <div class="modal fade" id="jsQuizModal" tabindex="-2" aria-labelledby="jsQuizModalLabel"
+            <!--modal-->
+            <div class="modal fade" id="highlightsHubModal" tabindex="-2" aria-labelledby="highlightsHubLabel"
                 aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="jsQuizModalLabel">javascript-quiz.</h5>
+                            <h5 class="modal-title" id="highlightsHubLabel">Project Title</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <img src="./assets/images/js-quiz-demo.png" alt="screenshot of deployed highlights hub app"
-                                id="js-quiz-modal-img">
-                            <p>an interactive javascript quiz game, where the user is asked to answer various questions about javascript. scores are calculated, saved in local storage and displayed at the end. 
+                            <img src="###3###"
+                                alt="screenshot of deployed app" class="modalImg"> <!-- add image id -->
+                            <p>Project Description
                             </p>
-                            <p>technologies used: html, css, javascript, local storage</p>
-                            <button class="modal-btn" id="js-quiz-github-modal-btn">github repo.<span
-                                    class="fas fa-chevron-right modal-btn-fa"></span></button>
-                            <button class="modal-btn" id="js-quiz-deployed-modal-btn">deployed app.<span
-                                    class="fas fa-chevron-right modal-btn-fa"></span></button>
+                            <p>Technologies Used</p>
+                            <button class="custom-button-one inner-modal-btn" id="highlightsHub-github-modal-btn">github repo<span
+                                class="fas fa-chevron-right modal-btn-fa"></span></button>
+                        <button class="custom-button-one inner-modal-btn" id="highlightsHub-deployed-modal-btn">deployed app<span
+                                class="fas fa-chevron-right modal-btn-fa"></span></button> <!-- id's are important for javascript-->
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- /highlightsHub -->
 
-            <!--password generator-->
-            <div class="col-sm-12 col-md-6 col-lg-3 portfolio-content" id="password-generator">
+            <!-- mvc techblog -->
+            <div class="col-sm-12 col-md-6 col-lg-3 portfolio-content" id="mvcTechblog">
                 <div class="card h-100 project">
-                    <img src="./assets/images/wallpaperflare.com_wallpaper.jpg" class="card-img-top" alt="..."
-                        id="password-generator-img">
-                    <div class="card-img-overlay custom-overlay" id="password-generator-overlay">
-                        <h3>password generator.</h3>
-                        <p>javascript.</p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#passwordGeneratorModal" id="password-generator-btn">learn more.</button>
+                    <!-- add img source below -->
+                    <img src="./assets/images/placeholder2.jpeg" class="card-img-top" alt="..." 
+                        id="mvcTechblog-img">
+                    <div class="card-img-overlay custom-overlay" id="mvcTechblog-overlay"> <!-- add project title before overlay in id -->
+                        <h3 class="overlayHeader">&#60;techBlog></h3> <!-- project title -->
+                        <p>Technologies Used</p> <!-- technologies used -->
+                        <button type="button" class="btn custom-button-one  learn-more-btn" data-bs-toggle="modal"
+                            data-bs-target="#mvcTechblogModal" >learn more.</button> <!-- data-bs-target needs to match modal id  -->
                     </div>
-                    <div class="card-body" id="password-generator-desc">
-                        <p class="card-text" id="featured-content-text">generate a random password.</p>
-                    </div>
-                </div>
-            </div>
-            <!--password generator modal-->
-            <div class="modal fade" id="passwordGeneratorModal" tabindex="-2"
-                aria-labelledby="passwordGeneratorModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="passwordGeneratorModalLabel">random-password-generator.</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <img src="./assets/images/password-generator.png" alt="screenshot of deployed highlights hub app"
-                                id="password-generator-modal-img">
-                            <p>a simple password generator powered by user inputs. select a password length, lowercase, uppercase, special symbols and/or numbers. 
-                            </p>
-                            <p>technologies used: html, css, javascript</p>
-                            <button class="modal-btn" id="password-generator-github-modal-btn">github repo.<span
-                                    class="fas fa-chevron-right modal-btn-fa"></span></button>
-                            <button class="modal-btn" id="password-generator-deployed-modal-btn">deployed app.<span
-                                    class="fas fa-chevron-right modal-btn-fa"></span></button>`
-                        </div>
+                    <div class="card-body" id="mvcTechblog-desc">
+                        <p class="card-text">live weather forecast application.</p>
                     </div>
                 </div>
             </div>
-
-            <!--placeholder card-->
-            <div class="col-sm-12 col-md-6 col-lg-3 portfolio-content" id="rick-roll">
-                <div class="card h-100 project">
-                    <img src="./assets/images/wallpaperflare.com_wallpaper.jpg" class="card-img-top" alt="..."
-                        id="rick-roll-img">
-                    <div class="card-img-overlay custom-overlay" id="rick-roll-overlay">
-                        <h3>big brain project</h3>
-                        <p>big brain tech</p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#rickRollModal" id="rick-roll-btn">learn more.</button>
-                    </div>
-                    <div class="card-body" id="rick-roll-desc">
-                        <p class="card-text" id="featured-content-text">for big brains only.</p>
-                    </div>
-                </div>
-            </div>
-            <!--password generator modal-->
-            <div class="modal fade" id="rickRollModal" tabindex="-2" aria-labelledby="rickRollModalLabel"
+            <!--modal-->
+            <div class="modal fade" id="mvcTechblogModal" tabindex="-2" aria-labelledby="mvcTechblogLabel"
                 aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="rickRollModalLabel">the big brain initiative.</h5>
+                            <h5 class="modal-title" id="mvcTechblogLabel">Project Title</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <img src="./assets/images/confidential.jpeg" alt="screenshot of deployed highlights hub app"
-                                id="rick-roll-modal-img">
-                            <p>the big brain initiative is an initiavtive for big brains that showcase big brains and a
-                                high level of initiative. through many big brain initiatives the big brain initiavtive
-                                has helped many big brained initiatives all over the world big brain their initiatives.
+                            <img src="###3###"
+                                alt="screenshot of deployed app" class="modalImg" > <!-- add image id -->
+                            <p>Project Description
                             </p>
-                            <p>technologies used: initiative, big brains</p>
-                            <button class="modal-btn" id="rick-roll-github-modal-btn">github repo.<span
-                                    class="fas fa-chevron-right modal-btn-fa"></span></button>
-                            <button class="modal-btn" id="rick-roll-deployed-modal-btn">deployed app.<span
-                                    class="fas fa-chevron-right modal-btn-fa"></span></button>`
+                            <p>Technologies Used</p>
+                            <button class="custom-button-one inner-modal-btn" id="mvcTechblog-github-modal-btn">github repo<span
+                                class="fas fa-chevron-right modal-btn-fa"></span></button>
+                        <button class="custom-button-one inner-modal-btn" id="mvcTechblog-deployed-modal-btn">deployed app<span
+                                class="fas fa-chevron-right modal-btn-fa"></span></button> <!-- id's are important for javascript-->
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- /mvctechblog -->
 
-            <div class="row">
+            <!-- eCommerce -->
+            <div class="col-sm-12 col-md-6 col-lg-3 portfolio-content" id="eCommerce"> <!-- add project title to id -->
+                <div class="card h-100 project">
+                    <!-- add img source below -->
+                    <img src="./assets/images/placeholder3.jpeg" class="card-img-top" alt="..." 
+                        id="eCommerce-img">
+                    <div class="card-img-overlay custom-overlay" id="eCommerce-overlay"> <!-- add project title before overlay in id -->
+                        <h3 class="overlayHeader">E-Commerce Back End</h3> <!-- project title -->
+                        <p>Technologies Used</p> <!-- technologies used -->
+                        <button type="button" class="btn custom-button-one  learn-more-btn" data-bs-toggle="modal"
+                            data-bs-target="#eCommerceModal" >learn more.</button> <!-- data-bs-target needs to match modal id  -->
+                    </div>
+                    <div class="card-body" id="eCommerce-desc">
+                        <p class="card-text">live weather forecast application.</p>
+                    </div>
+                </div>
+            </div>
+            <!--modal-->
+            <div class="modal fade" id="eCommerceModal" tabindex="-2" aria-labelledby="eCommerceLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="eCommerceLabel">E-Commerce Back End</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="###3###"
+                                alt="screenshot of deployed app" class="modalImg" id="" > <!-- add image id -->
+                            <p>Project Description
+                            </p>
+                            <p>Technologies Used</p>
+                            <button class="custom-button-one inner-modal-btn" id="eCommerce-github-modal-btn">github repo<span
+                                class="fas fa-chevron-right modal-btn-fa"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /eCommerce -->
+
+            <!-- employeeTracker -->
+            <div class="col-sm-12 col-md-6 col-lg-3 portfolio-content" id="employeeTracker"> <!-- add project title to id -->
+                <div class="card h-100 project">
+                    <!-- add img source below -->
+                    <img src="./assets/images/placeholder1.jpeg" class="card-img-top" alt="..." 
+                        id="employeeTracker-img">
+                    <div class="card-img-overlay custom-overlay" id="employeeTracker-overlay"> <!-- add project title before overlay in id -->
+                        <h3 class="overlayHeader">Employee Tracker</h3> <!-- project title -->
+                        <p>Technologies Used</p> <!-- technologies used -->
+                        <button type="button" class="btn custom-button-one  learn-more-btn" data-bs-toggle="modal"
+                            data-bs-target="#employeeTrackerModal" >learn more.</button> <!-- data-bs-target needs to match modal id  -->
+                    </div>
+                    <div class="card-body" id="employeeTracker-desc">
+                        <p class="card-text">live weather forecast application.</p>
+                    </div>
+                </div>
+            </div>
+            <!--modal-->
+            <div class="modal fade" id="employeeTrackerModal" tabindex="-2" aria-labelledby="employeeTracker"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="employeeTracker">Project Title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="###3###"
+                                alt="screenshot of deployed app" class="modalImg"> <!-- add image id -->
+                            <p>Project Description
+                            </p>
+                            <p>Technologies Used</p>
+                            <button class="custom-button-one inner-modal-btn" id="employeeTracker-github-modal-btn">github repo<span
+                                class="fas fa-chevron-right modal-btn-fa"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /employeeTracker -->
+
+            <!-- teamProfile -->
+            <div class="col-sm-12 col-md-6 col-lg-3 portfolio-content" id="teamProfile"> <!-- add project title to id -->
+                <div class="card h-100 project">
+                    <!-- add img source below -->
+                    <img src="./assets/images/placeholder2.jpeg" class="card-img-top" alt="..." 
+                        id="teamProfile-img">
+                    <div class="card-img-overlay custom-overlay" id="teamProfile-overlay"> <!-- add project title before overlay in id -->
+                        <h3 class="overlayHeader">Team Profile Generator</h3> <!-- project title -->
+                        <p>Technologies Used</p> <!-- technologies used -->
+                        <button type="button" class="btn custom-button-one  learn-more-btn" data-bs-toggle="modal"
+                            data-bs-target="#teamProfileModal" >learn more.</button> <!-- data-bs-target needs to match modal id  -->
+                    </div>
+                    <div class="card-body" id="teamProfile-desc">
+                        <p class="card-text">live weather forecast application.</p>
+                    </div>
+                </div>
+            </div>
+            <!--modal-->
+            <div class="modal fade" id="teamProfileModal" tabindex="-2" aria-labelledby="teamProfileLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="teamProfileLabel">Project Title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="###3###"
+                                alt="screenshot of deployed app" class="teamProfilemodalImg"> <!-- add image id -->
+                            <p>Project Description
+                            </p>
+                            <p>Technologies Used</p>
+                            <button class="custom-button-one inner-modal-btn" id="teamProfile-github-modal-btn">github repo<span
+                                class="fas fa-chevron-right modal-btn-fa"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /teamProfile -->
+
+            <!-- weatherDash-->
+            <div class="col-sm-12 col-md-6 col-lg-3 portfolio-content" id="weatherDash"> <!-- add project title to id -->
+                <div class="card h-100 project">
+                    <!-- add img source below -->
+                    <img src="./assets/images/placeholder1.jpeg" class="card-img-top" alt="..." 
+                        id="weatherDash-img">
+                    <div class="card-img-overlay custom-overlay" id="weatherDash-overlay"> <!-- add project title before overlay in id -->
+                        <h3 class="overlayHeader">Weather Dashboard</h3> <!-- project title -->
+                        <p>Technologies Used</p> <!-- technologies used -->
+                        <button type="button" class="btn custom-button-one  learn-more-btn" data-bs-toggle="modal"
+                            data-bs-target="#weatherDashModal" >learn more.</button> <!-- data-bs-target needs to match modal id  -->
+                    </div>
+                    <div class="card-body" id="weatherDash-desc">
+                        <p class="card-text">live weather forecast application.</p>
+                    </div>
+                </div>
+            </div>
+            <!--modal-->
+            <div class="modal fade" id="weatherDashModal" tabindex="-2" aria-labelledby="weatherDashLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="weatherDashLabel">Project Title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src=""
+                                alt="screenshot of deployed app" class="modalImg"> <!-- add image id -->
+                            <p>Project Description
+                            </p>
+                            <p>Technologies Used</p>
+                            <button class="custom-button-one inner-modal-btn" id="weatherDash-github-modal-btn">github repo<span
+                                class="fas fa-chevron-right modal-btn-fa"></span></button>
+                        <button class="custom-button-one inner-modal-btn" id="weatherDash-deployed-modal-btn">deployed app<span
+                                class="fas fa-chevron-right modal-btn-fa"></span></button> <!-- id's are important for javascript-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /weatherDash -->
+
+
+            <!--dayPlanner-->
+            <div class="col-sm-12 col-md-6 col-lg-3 portfolio-content" id="dayPlanner"> <!-- add project title to id -->
+                <div class="card h-100 project">
+                    <!-- add img source below -->
+                    <img src="./assets/images/placeholder3.jpeg" class="card-img-top" alt="..." 
+                        id="dayPlanner-img">
+                    <div class="card-img-overlay custom-overlay" id="dayPlanner-overlay"> <!-- add project title before overlay in id -->
+                        <h3 class="overlayHeader">Day Planner</h3> <!-- project title -->
+                        <p>Technologies Used</p> <!-- technologies used -->
+                        <button type="button" class="btn custom-button-one  learn-more-btn" data-bs-toggle="modal"
+                            data-bs-target="#dayPlannerModal" >learn more.</button> <!-- data-bs-target needs to match modal id  -->
+                    </div>
+                    <div class="card-body" id="dayPlanner-desc">
+                        <p class="card-text">live weather forecast application.</p>
+                    </div>
+                </div>
+            </div>
+            <!--modal-->
+            <div class="modal fade" id="dayPlannerModal" tabindex="-2" aria-labelledby="dayPlannerLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="dayPlannerLabel">Project Title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="###3###"
+                                alt="screenshot of deployed app" class="modalImg"> 
+                            <p>Project Description
+                            </p>
+                            <p>Technologies Used</p>
+                            <button class="custom-button-one inner-modal-btn" id="dayPlanner-github-modal-btn">github repo<span
+                                class="fas fa-chevron-right modal-btn-fa"></span></button>
+                        <button class="custom-button-one inner-modal-btn" id="dayPlanner-deployed-modal-btn">deployed app<span
+                                class="fas fa-chevron-right modal-btn-fa"></span></button> <!-- id's are important for javascript-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /dayPlanner -->
+
+            <!--jsQuiz-->
+            <div class="col-sm-12 col-md-6 col-lg-3 portfolio-content" id="jsQuiz"> <!-- add project title to id -->
+                <div class="card h-100 project">
+                    <!-- add img source below -->
+                    <img src="./assets/images/placeholder2.jpeg" class="card-img-top" alt="..." 
+                        id="jsQuiz-img">
+                    <div class="card-img-overlay custom-overlay" id="jsQuiz-overlay"> <!-- add project title before overlay in id -->
+                        <h3 class="overlayHeader">JavaScript Quiz</h3> <!-- project title -->
+                        <p>Technologies Used</p> <!-- technologies used -->
+                        <button type="button" class="btn custom-button-one  learn-more-btn" data-bs-toggle="modal"
+                            data-bs-target="#jsQuizModal" >learn more.</button> <!-- data-bs-target needs to match modal id  -->
+                    </div>
+                    <div class="card-body" id="jsQuiz-desc">
+                        <p class="card-text">live weather forecast application.</p>
+                    </div>
+                </div>
+            </div>
+            <!--modal-->
+            <div class="modal fade" id="jsQuizModal" tabindex="-2" aria-labelledby="jsQuizLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="jsQuizLabel">Project Title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="###3###"
+                                alt="screenshot of deployed app" class="modalImg"> 
+                            <p>Project Description
+                            </p>
+                            <p>Technologies Used</p>
+                            <button class="custom-button-one inner-modal-btn" id="jsQuiz-github-modal-btn">github repo<span
+                                class="fas fa-chevron-right modal-btn-fa"></span></button>
+                        <button class="custom-button-one inner-modal-btn" id="jsQuiz-deployed-modal-btn">deployed app<span
+                                class="fas fa-chevron-right modal-btn-fa"></span></button> <!-- id's are important for javascript-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /jsQuiz -->
+
+            <!--passwordGenerator-->
+            <div class="col-sm-12 col-md-6 col-lg-3 portfolio-content" id="passwordGenerator"> <!-- add project title to id -->
+                <div class="card h-100 project">
+                    <!-- add img source below -->
+                    <img src="./assets/images/placeholder2.jpeg" class="card-img-top" alt="..." 
+                        id="passwordGenerator-img">
+                    <div class="card-img-overlay custom-overlay" id="passwordGenerator-overlay"> <!-- add project title before overlay in id -->
+                        <h3 class="overlayHeader">Project Title</h3> <!-- project title -->
+                        <p>Technologies Used</p> <!-- technologies used -->
+                        <button type="button" class="btn custom-button-one  learn-more-btn" data-bs-toggle="modal"
+                            data-bs-target="#passwordGeneratorModal" >learn more.</button> <!-- data-bs-target needs to match modal id  -->
+                    </div>
+                    <div class="card-body" id="passwordGenerator-desc">
+                        <p class="card-text">live weather forecast application.</p>
+                    </div>
+                </div>
+            </div>
+            <!--modal-->
+            <div class="modal fade" id="passwordGeneratorModal" tabindex="-2" aria-labelledby="passwordGeneratorLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="passwordGeneratorLabel">Project Title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="###3###"
+                                alt="screenshot of deployed app" class="modalImg"> 
+                            <p>Project Description
+                            </p>
+                            <p>Technologies Used</p>
+                            <button class="custom-button-one inner-modal-btn" id="passwordGenerator-github-modal-btn">github repo<span
+                                class="fas fa-chevron-right modal-btn-fa"></span></button>
+                        <button class="custom-button-one inner-modal-btn" id="passwordGenerator-deployed-modal-btn">deployed app<span
+                                class="fas fa-chevron-right modal-btn-fa"></span></button> <!-- id's are important for javascript-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /passwordGenerator -->
+
+            <div class="row justify-content-center text-center contact-me">
                 <div class="col-12 contact-btn-cont">
-                    <h3>like what you see?</h3>
-                    <button id="contact-btn">contact me.<span class="fas fa-chevron-right"
-                            id="contact-fa"></span></button>
+                    <h3>Feel like getting in touch?</h3>
+                    <button class="custom-button-one" id="contact-btn">Contact Me<span class="fas fa-chevron-right contact-fa"></span></button>
                 </div>
             </div>
     </main>

@@ -5,8 +5,8 @@ projectsLinkBtn.on('click', function(event) {
     document.location = './portfolio.html';
 });
 
-const githubBtn = $('#github-modal-btn');
-const deployedAppModalBtn = $('#deployed-modal-btn'); 
+const githubBtn = $('#featured-github-modal-btn');
+const deployedAppModalBtn = $('#featured-deployed-modal-btn'); 
 
 githubBtn.on('click', function() {
     window.open('https://github.com/patricktheodore/football-highlights-dashboard', '_blank')
@@ -26,7 +26,8 @@ hiBtn.hover(function() {
 });
 
 hiBtn.on('click', function() {
-    document.location = './index.html#about'
+    // document.location = './index.html#about'
+    $('.custom-banner').hide();
 });
 
 // const profilePic = $('#about-image');   ----- works, just need to update images and respective paths

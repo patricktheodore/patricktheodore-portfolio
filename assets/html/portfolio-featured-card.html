@@ -1,0 +1,40 @@
+<!-- featured card -->
+<div class="col-sm-12 col-md-12 col-lg-6 portfolio-content" id="featured-porject">
+    <div class="card h-100 project">
+        <img src="./assets/images/placeholder3.jpeg" class="card-img-top" alt="..." id="featured-porject-img">
+        <div class="card-img-overlay custom-overlay" id="featured-porject-overlay">
+            <h3>featured-porjectboard.</h3>
+            <p>javascript/local storage/moment.js/openweather api</p>
+            <button type="button" class="btn btn-primary modal-btn" data-bs-toggle="modal"
+                data-bs-target="#featuredProject" id="featured-btn">learn more.</button>
+        </div>
+        <div class="card-body" id="featured-porject-desc">
+            <p class="card-text" id="featured-content-text">live weather forecast application.</p>
+        </div>
+    </div>
+</div>
+<!--deatured modal-->
+<div class="modal fade" id="featuredProject" tabindex="-2" aria-labelledby="featuredProjectLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="featuredProjectLabel">featured-porjectboard.</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="./assets/images/featured-porject.png" alt="screenshot of deployed highlights hub app"
+                    id="weather-modal-img">
+                <p>featured dash is an interactive application that takes user input and displays the current
+                    featured conditions plus the featured forecast for the next 5 days. searches are saved in
+                    local storage and dsisplayed for the user to reference again if needed.
+                </p>
+                <p>technologies used: javascript, local storage, openfeatured api, moment.js</p>
+                <button class="modal-btn" id="featured-github-modal-btn">github repo.<span
+                        class="fas fa-chevron-right modal-btn-fa"></span></button>
+                <button class="modal-btn" id="featured-deployed-modal-btn">deployed app.<span
+                        class="fas fa-chevron-right modal-btn-fa"></span></button>
+            </div>
+        </div>
+    </div>
+</div>

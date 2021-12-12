@@ -13,11 +13,7 @@ body {
 
 /*--------------------*/
 
-#weather-dash-overlay,
-#day-planner-overlay,
-#js-quiz-overlay,
-#password-generator-overlay,
-#rick-roll-overlay {
+.custom-overlay {
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -25,92 +21,65 @@ body {
     color: var(--dark);
 }
 
-#weather-dash-desc,
-#weatherModalLabel,
-#day-planner-desc,
-#dayPlannerModalLabel,
-#js-quiz-desc,
-#jsQuizModalLabel,
-#password-generator-desc,
-#passwordGeneratorModalLabel,
-#rick-roll-desc,
-#rickRollModalLabel {
+.custom-body,
+.custom-modal-title,
+.card-text {
     color: var(--dark);
 }
 
-#weatherModalLabel,
-#dayPlannerModalLabel,
-#jsQuizModalLabel,
-#passwordGeneratorModalLabel,
-#rickRollModalLabel  {
+.overlayHeader,
+.custom-modal-title {
     text-align: center;
 }
 
-#weather-dash-overlay h3,
-#day-planner-overlay h3,
-#js-quiz-overlay h3,
-#password-generator-overlay h3,
-#rick-roll-overlay h3 {
-    text-align: center;
-}
 
-#weather-dash:hover #weather-dash-overlay,
-#day-planner:hover #day-planner-overlay,
-#js-quiz:hover #js-quiz-overlay,
-#password-generator:hover #password-generator-overlay,
-#rick-roll:hover #rick-roll-overlay {
+/* hover states */
+#weatherDash:hover #weatherDash-overlay,
+#dayPlanner:hover #dayPlanner-overlay,
+#jsQuiz:hover #jsQuiz-overlay,
+#passwordGenerator:hover #passwordGenerator-overlay,
+#rick-roll:hover #rick-roll-overlay,
+#featured:hover #featured-project-overlay,
+#readmeGenerator:hover #readmeGenerator-overlay,
+#mvcTechblog:hover #mvcTechblog-overlay,
+#eCommerce:hover #eCommerce-overlay,
+#employeeTracker:hover #employeeTracker-overlay,
+#teamProfile:hover #teamProfile-overlay,
+#highlightsHub:hover #highlightsHub-overlay {
     display: flex;
 }
 
-#weather-dash:hover #weather-dash-img,
-#weather-dash:hover #weather-dash-desc,
-#day-planner:hover #day-planner-img,
-#day-planner:hover #day-planner-desc,
-#js-quiz:hover #js-quiz-img,
-#js-quiz:hover #js-quiz-desc,
-#password-generator:hover #password-generator-img,
-#password-generator:hover #password-generator-desc,
+#weatherDash:hover #weatherDash-img,
+#weatherDash:hover #weatherDash-desc,
+#dayPlanner:hover #dayPlanner-img,
+#dayPlanner:hover #dayPlanner-desc,
+#jsQuiz:hover #jsQuiz-img,
+#jsQuiz:hover #jsQuiz-desc,
+#passwordGenerator:hover #passwordGenerator-img,
+#passwordGenerator:hover #passwordGenerator-desc,
 #rick-roll:hover #rick-roll-img,
-#rick-roll:hover #rick-roll-desc   {
+#rick-roll:hover #rick-roll-desc,
+#featured:hover #featured-project-img,
+#featured:hover #featured-project-desc,
+#readmeGenerator:hover #readmeGenerator-img,
+#readmeGenerator:hover #readmeGenerator-desc,
+#mvcTechblog:hover #mvcTechblog-img,
+#mvcTechblog:hover #mvcTechblog-desc,
+#eCommerce:hover #eCommerce-img,
+#eCommerce:hover #eCommerce-desc,
+#employeeTracker:hover #employeeTracker-img,
+#employeeTracker:hover #employeeTracker-desc,
+#teamProfile:hover #teamProfile-img,
+#teamProfile:hover #teamProfile-desc,
+#highlightsHub:hover #highlightsHub-img,
+#highlightsHub:hover #highlightsHub-desc     {
     opacity: 0.2;
     transition: opacity 150ms;
 }
 
-.modal-btn,
-#day-planner-btn,
-#js-quiz-btn,
-#password-generator-btn,
-#rick-roll-btn,
-#contact-btn {
-    background-color: var(--dark);
-    color: var(--light);
-    cursor: pointer;
-    border: solid 1px var(--dark);
-    font-size: 1rem;
-    border-radius: 4px;
-    text-align: center;
-    padding: 0.5rem;
-    z-index: 1;
-}
+/* hover states */
 
-.modal-btn:hover,
-#day-planner-btn:hover,
-#js-quiz-btn:hover,
-#password-generator-btn:hover,
-#rick-roll-btn:hover,
-#contact-btn:hover {
-    background-color: var(--light);
-    color: var(--dark);
-    transform: translateY(-0.1rem);
-    transition: transform 150ms;
-    box-shadow: 0 0 5px var(--dark);
-}
-
-#weather-modal-img,
-#day-planner-modal-img,
-#js-quiz-modal-img,
-#password-generator-modal-img,
-#rick-roll-modal-img {
+.modalImg {
     margin-bottom: 2rem;
     border: solid 1px var(--dark);
     border-radius: 4px;
@@ -124,21 +93,71 @@ body {
 }
 
 .portfolio-content,
-.portfolio-content-cont {
-    margin: 5rem 0;
+.portfolio-content-cont,
+#contact-btn {
+    margin: 2rem 0;
 }
 
-.modal-btn {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+.featured-content {
+    margin-bottom: 10rem;
+}
+
+.active {
+    color: aquamarine
+}
+
+.custom-button-one {
+    background-color: var(--dark);
+    color: var(--light);
+    cursor: pointer;
+    padding: 1rem 0 1rem 2.5rem;
+    border-radius: 6px;
+    border: solid 1px var(--primary);
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    z-index: 1;
+}
+
+.learn-more-btn {
+    padding: 0.5rem 2rem;
+}
+.inner-modal-btn {
+    padding: 0.5rem 0rem 0.5rem 2.5rem;
+}
+
+.inner-modal-btn:hover .modal-btn-fa {
+    color: var(--dark);
+}
+
+.learn-more-btn:hover,
+.inner-modal-btn:hover {
+    background-color: aquamarine;
+    color: var(--dark);
 }
 
 .contact-btn-cont {
-    text-align: center;
     color: var(--dark);
-    margin-top: 6rem;
 }
 
-#contact-btn {
-    margin-top: 2rem;
+.modal-btn-fa,
+.contact-fa {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: inline;
+    opacity: 0;
+    color: aquamarine;
+    font-size: 1rem;
+}
+
+.custom-button-one:hover .modal-btn-fa,
+.custom-button-one:hover .contact-fa {
+    opacity: 1;
+}
+
+.contact-me {
+    margin: 10rem 0 5rem 0;
 }
