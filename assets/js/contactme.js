@@ -105,8 +105,6 @@ $('#resume-btn').on('click', (event) => {
             Swal.fire("OK, don't then... but just know... you have hurt my feelings.", '', 'error')
         }
     }) //code a download and a view link
-
-
 }
 );
 
