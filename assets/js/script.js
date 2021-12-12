@@ -9,11 +9,11 @@ const githubBtn = $('#featured-github-modal-btn');
 const deployedAppModalBtn = $('#featured-deployed-modal-btn'); 
 
 githubBtn.on('click', function() {
-    window.open('https://github.com/patricktheodore/football-highlights-dashboard', '_blank')
+    window.open('https://github.com/patricktheodore/rental-reviewer', '_blank')
 });
 
 deployedAppModalBtn.on('click', function() {
-    window.open('https://patricktheodore.github.io/football-highlights-dashboard/', '_blank')
+    window.open('https://rocky-cove-88046.herokuapp.com/', '_blank')
 });
 
 const hiBtn = $('#hero-overlay-title');

@@ -77,7 +77,7 @@
                 <div>
                     <p class="section-text-content">
                         here are some small apps developed over the course of my 6 month full stack web development
-                        bootcamp, and a couple of little pet projects built purely out of interest. as my skillset
+                        bootcamp, and a couple of little pet projects built purely out of passion. as my skillset
                         grows, I plan to update these into fully fledged applications. I enjoy revisiting old projects
                         and revamping them. I believe that nothing is perfect and there is always room for improvement.
                     </p>
@@ -112,17 +112,19 @@
                         <div class="modal-body">
                             <img src="./assets/images/featured-project.png"
                                 alt="screenshot of deployed highlights hub app" id="featured-project-modal-img">
-                            <p>featured dash is an interactive application that takes user input and displays the
+                            <p class="longDesc">featured dash is an interactive application that takes user input and
+                                displays the
                                 current
                                 featured conditions plus the featured forecast for the next 5 days. searches are saved
                                 in
                                 local storage and dsisplayed for the user to reference again if needed.
                             </p>
-                            <p>technologies used: javascript, local storage, openfeatured api, moment.js</p>
                             <button class="custom-button-one" id="featured-github-modal-btn">github repo<span
                                     class="fas fa-chevron-right modal-btn-fa" id="github-fa"></span></button>
                             <button class="custom-button-one" id="featured-deployed-modal-btn">deployed app<span
                                     class="fas fa-chevron-right modal-btn-fa" id="app-fa"></span></button>
+                            <p class="techs">technologies used: javascript, local storage, openfeatured api, moment.js
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -135,7 +137,7 @@
                         alt="screenshot of readmeGenerator" id="readmeGenerator-img">
                     <div class="card-img-overlay custom-overlay" id="readmeGenerator-overlay">
                         <h3 class="overlayHeader">Perfect Readme Generator</h3>
-                        <p>Technologies Used</p> 
+                        <p>Technologies Used</p>
                         <button type="button" class="btn custom-button-one learn-more-btn" data-bs-toggle="modal"
                             data-bs-target="#readmeGeneratorModal">learn more.</button>
                     </div>
@@ -155,11 +157,12 @@
                         </div>
                         <div class="modal-body custom-body">
                             <img src="###4###" alt="screenshot of deployed app" class="modalImg" id="">
-                            <p>Project Description
+                            <p class="longDesc">Project Description
                             </p>
-                            <p>Technologies Used</p>
-                            <button class="custom-button-one inner-modal-btn" id="readmeGenerator-github-modal-btn">github repo<span
+                            <button class="custom-button-one inner-modal-btn"
+                                id="readmeGenerator-github-modal-btn">github repo<span
                                     class="fas fa-chevron-right modal-btn-fa"></span></button>
+                            <p class="longDesc">Technologies Used</p>
                         </div>
                     </div>
                 </div>
@@ -167,16 +170,18 @@
             <!-- /readmegenerator -->
 
             <!-- highlightsHub -->
-            <div class="col-sm-12 col-md-6 col-lg-3 portfolio-content" id="highlightsHub"> <!-- add project title to id -->
+            <div class="col-sm-12 col-md-6 col-lg-3 portfolio-content" id="highlightsHub">
+                <!-- add project title to id -->
                 <div class="card h-100 project">
                     <!-- add img source below -->
-                    <img src="./assets/images/placeholder3.jpeg" class="card-img-top" alt="..." 
-                        id="highlightsHub-img">
-                    <div class="card-img-overlay custom-overlay" id="highlightsHub-overlay"> <!-- add project title before overlay in id -->
+                    <img src="./assets/images/placeholder3.jpeg" class="card-img-top" alt="..." id="highlightsHub-img">
+                    <div class="card-img-overlay custom-overlay" id="highlightsHub-overlay">
+                        <!-- add project title before overlay in id -->
                         <h3 class="overlayHeader">Highlights Hub</h3> <!-- project title -->
                         <p>Technologies Used</p> <!-- technologies used -->
                         <button type="button" class="btn custom-button-one  learn-more-btn" data-bs-toggle="modal"
-                            data-bs-target="#highlightsHubModal" >learn more.</button> <!-- data-bs-target needs to match modal id  -->
+                            data-bs-target="#highlightsHubModal">learn more.</button>
+                        <!-- data-bs-target needs to match modal id  -->
                     </div>
                     <div class="card-body" id="highlightsHub-desc">
                         <p class="card-text">live weather forecast application.</p>
@@ -193,15 +198,16 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <img src="###3###"
-                                alt="screenshot of deployed app" class="modalImg"> <!-- add image id -->
-                            <p>Project Description
+                            <img src="###3###" alt="screenshot of deployed app" class="modalImg"> <!-- add image id -->
+                            <p class="longDesc">Project Description
                             </p>
-                            <p>Technologies Used</p>
-                            <button class="custom-button-one inner-modal-btn" id="highlightsHub-github-modal-btn">github repo<span
-                                class="fas fa-chevron-right modal-btn-fa"></span></button>
-                        <button class="custom-button-one inner-modal-btn" id="highlightsHub-deployed-modal-btn">deployed app<span
-                                class="fas fa-chevron-right modal-btn-fa"></span></button> <!-- id's are important for javascript-->
+                            <button class="custom-button-one inner-modal-btn" id="highlightsHub-github-modal-btn">github
+                                repo<span class="fas fa-chevron-right modal-btn-fa"></span></button>
+                            <button class="custom-button-one inner-modal-btn"
+                                id="highlightsHub-deployed-modal-btn">deployed app<span
+                                    class="fas fa-chevron-right modal-btn-fa"></span></button>
+                            <!-- id's are important for javascript-->
+                            <p class="longDesc">Technologies Used</p>
                         </div>
                     </div>
                 </div>
@@ -212,13 +218,14 @@
             <div class="col-sm-12 col-md-6 col-lg-3 portfolio-content" id="mvcTechblog">
                 <div class="card h-100 project">
                     <!-- add img source below -->
-                    <img src="./assets/images/placeholder2.jpeg" class="card-img-top" alt="..." 
-                        id="mvcTechblog-img">
-                    <div class="card-img-overlay custom-overlay" id="mvcTechblog-overlay"> <!-- add project title before overlay in id -->
+                    <img src="./assets/images/placeholder2.jpeg" class="card-img-top" alt="..." id="mvcTechblog-img">
+                    <div class="card-img-overlay custom-overlay" id="mvcTechblog-overlay">
+                        <!-- add project title before overlay in id -->
                         <h3 class="overlayHeader">&#60;techBlog></h3> <!-- project title -->
                         <p>Technologies Used</p> <!-- technologies used -->
                         <button type="button" class="btn custom-button-one  learn-more-btn" data-bs-toggle="modal"
-                            data-bs-target="#mvcTechblogModal" >learn more.</button> <!-- data-bs-target needs to match modal id  -->
+                            data-bs-target="#mvcTechblogModal">learn more.</button>
+                        <!-- data-bs-target needs to match modal id  -->
                     </div>
                     <div class="card-body" id="mvcTechblog-desc">
                         <p class="card-text">live weather forecast application.</p>
@@ -235,15 +242,16 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <img src="###3###"
-                                alt="screenshot of deployed app" class="modalImg" > <!-- add image id -->
-                            <p>Project Description
+                            <img src="###3###" alt="screenshot of deployed app" class="modalImg"> <!-- add image id -->
+                            <p class="longDesc">Project Description
                             </p>
-                            <p>Technologies Used</p>
-                            <button class="custom-button-one inner-modal-btn" id="mvcTechblog-github-modal-btn">github repo<span
-                                class="fas fa-chevron-right modal-btn-fa"></span></button>
-                        <button class="custom-button-one inner-modal-btn" id="mvcTechblog-deployed-modal-btn">deployed app<span
-                                class="fas fa-chevron-right modal-btn-fa"></span></button> <!-- id's are important for javascript-->
+                            <button class="custom-button-one inner-modal-btn" id="mvcTechblog-github-modal-btn">github
+                                repo<span class="fas fa-chevron-right modal-btn-fa"></span></button>
+                            <button class="custom-button-one inner-modal-btn"
+                                id="mvcTechblog-deployed-modal-btn">deployed app<span
+                                    class="fas fa-chevron-right modal-btn-fa"></span></button>
+                            <!-- id's are important for javascript-->
+                            <p class="longDesc">Technologies Used</p>
                         </div>
                     </div>
                 </div>
@@ -251,16 +259,18 @@
             <!-- /mvctechblog -->
 
             <!-- eCommerce -->
-            <div class="col-sm-12 col-md-6 col-lg-3 portfolio-content" id="eCommerce"> <!-- add project title to id -->
+            <div class="col-sm-12 col-md-6 col-lg-3 portfolio-content" id="eCommerce">
+                <!-- add project title to id -->
                 <div class="card h-100 project">
                     <!-- add img source below -->
-                    <img src="./assets/images/placeholder3.jpeg" class="card-img-top" alt="..." 
-                        id="eCommerce-img">
-                    <div class="card-img-overlay custom-overlay" id="eCommerce-overlay"> <!-- add project title before overlay in id -->
+                    <img src="./assets/images/placeholder3.jpeg" class="card-img-top" alt="..." id="eCommerce-img">
+                    <div class="card-img-overlay custom-overlay" id="eCommerce-overlay">
+                        <!-- add project title before overlay in id -->
                         <h3 class="overlayHeader">E-Commerce Back End</h3> <!-- project title -->
                         <p>Technologies Used</p> <!-- technologies used -->
                         <button type="button" class="btn custom-button-one  learn-more-btn" data-bs-toggle="modal"
-                            data-bs-target="#eCommerceModal" >learn more.</button> <!-- data-bs-target needs to match modal id  -->
+                            data-bs-target="#eCommerceModal">learn more.</button>
+                        <!-- data-bs-target needs to match modal id  -->
                     </div>
                     <div class="card-body" id="eCommerce-desc">
                         <p class="card-text">live weather forecast application.</p>
@@ -277,13 +287,13 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <img src="###3###"
-                                alt="screenshot of deployed app" class="modalImg" id="" > <!-- add image id -->
-                            <p>Project Description
+                            <img src="###3###" alt="screenshot of deployed app" class="modalImg" id="">
+                            <!-- add image id -->
+                            <p class="longDesc">Project Description
                             </p>
-                            <p>Technologies Used</p>
-                            <button class="custom-button-one inner-modal-btn" id="eCommerce-github-modal-btn">github repo<span
-                                class="fas fa-chevron-right modal-btn-fa"></span></button>
+                            <button class="custom-button-one inner-modal-btn" id="eCommerce-github-modal-btn">github
+                                repo<span class="fas fa-chevron-right modal-btn-fa"></span></button>
+                            <p class="longDesc">Technologies Used</p>
                         </div>
                     </div>
                 </div>
@@ -291,16 +301,19 @@
             <!-- /eCommerce -->
 
             <!-- employeeTracker -->
-            <div class="col-sm-12 col-md-6 col-lg-3 portfolio-content" id="employeeTracker"> <!-- add project title to id -->
+            <div class="col-sm-12 col-md-6 col-lg-3 portfolio-content" id="employeeTracker">
+                <!-- add project title to id -->
                 <div class="card h-100 project">
                     <!-- add img source below -->
-                    <img src="./assets/images/placeholder1.jpeg" class="card-img-top" alt="..." 
+                    <img src="./assets/images/placeholder1.jpeg" class="card-img-top" alt="..."
                         id="employeeTracker-img">
-                    <div class="card-img-overlay custom-overlay" id="employeeTracker-overlay"> <!-- add project title before overlay in id -->
+                    <div class="card-img-overlay custom-overlay" id="employeeTracker-overlay">
+                        <!-- add project title before overlay in id -->
                         <h3 class="overlayHeader">Employee Tracker</h3> <!-- project title -->
                         <p>Technologies Used</p> <!-- technologies used -->
                         <button type="button" class="btn custom-button-one  learn-more-btn" data-bs-toggle="modal"
-                            data-bs-target="#employeeTrackerModal" >learn more.</button> <!-- data-bs-target needs to match modal id  -->
+                            data-bs-target="#employeeTrackerModal">learn more.</button>
+                        <!-- data-bs-target needs to match modal id  -->
                     </div>
                     <div class="card-body" id="employeeTracker-desc">
                         <p class="card-text">live weather forecast application.</p>
@@ -317,13 +330,13 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <img src="###3###"
-                                alt="screenshot of deployed app" class="modalImg"> <!-- add image id -->
-                            <p>Project Description
+                            <img src="###3###" alt="screenshot of deployed app" class="modalImg"> <!-- add image id -->
+                            <p class="longDesc">Project Description
                             </p>
-                            <p>Technologies Used</p>
-                            <button class="custom-button-one inner-modal-btn" id="employeeTracker-github-modal-btn">github repo<span
-                                class="fas fa-chevron-right modal-btn-fa"></span></button>
+                            <button class="custom-button-one inner-modal-btn"
+                                id="employeeTracker-github-modal-btn">github repo<span
+                                    class="fas fa-chevron-right modal-btn-fa"></span></button>
+                            <p class="longDesc">Technologies Used</p>
                         </div>
                     </div>
                 </div>
@@ -331,16 +344,18 @@
             <!-- /employeeTracker -->
 
             <!-- teamProfile -->
-            <div class="col-sm-12 col-md-6 col-lg-3 portfolio-content" id="teamProfile"> <!-- add project title to id -->
+            <div class="col-sm-12 col-md-6 col-lg-3 portfolio-content" id="teamProfile">
+                <!-- add project title to id -->
                 <div class="card h-100 project">
                     <!-- add img source below -->
-                    <img src="./assets/images/placeholder2.jpeg" class="card-img-top" alt="..." 
-                        id="teamProfile-img">
-                    <div class="card-img-overlay custom-overlay" id="teamProfile-overlay"> <!-- add project title before overlay in id -->
+                    <img src="./assets/images/placeholder2.jpeg" class="card-img-top" alt="..." id="teamProfile-img">
+                    <div class="card-img-overlay custom-overlay" id="teamProfile-overlay">
+                        <!-- add project title before overlay in id -->
                         <h3 class="overlayHeader">Team Profile Generator</h3> <!-- project title -->
                         <p>Technologies Used</p> <!-- technologies used -->
                         <button type="button" class="btn custom-button-one  learn-more-btn" data-bs-toggle="modal"
-                            data-bs-target="#teamProfileModal" >learn more.</button> <!-- data-bs-target needs to match modal id  -->
+                            data-bs-target="#teamProfileModal">learn more.</button>
+                        <!-- data-bs-target needs to match modal id  -->
                     </div>
                     <div class="card-body" id="teamProfile-desc">
                         <p class="card-text">live weather forecast application.</p>
@@ -357,13 +372,13 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <img src="###3###"
-                                alt="screenshot of deployed app" class="teamProfilemodalImg"> <!-- add image id -->
-                            <p>Project Description
+                            <img src="###3###" alt="screenshot of deployed app" class="teamProfilemodalImg">
+                            <!-- add image id -->
+                            <p class="longDesc">Project Description
                             </p>
-                            <p>Technologies Used</p>
-                            <button class="custom-button-one inner-modal-btn" id="teamProfile-github-modal-btn">github repo<span
-                                class="fas fa-chevron-right modal-btn-fa"></span></button>
+                            <button class="custom-button-one inner-modal-btn" id="teamProfile-github-modal-btn">github
+                                repo<span class="fas fa-chevron-right modal-btn-fa"></span></button>
+                            <p class="longDesc">Technologies Used</p>
                         </div>
                     </div>
                 </div>
@@ -371,16 +386,18 @@
             <!-- /teamProfile -->
 
             <!-- weatherDash-->
-            <div class="col-sm-12 col-md-6 col-lg-3 portfolio-content" id="weatherDash"> <!-- add project title to id -->
+            <div class="col-sm-12 col-md-6 col-lg-3 portfolio-content" id="weatherDash">
+                <!-- add project title to id -->
                 <div class="card h-100 project">
                     <!-- add img source below -->
-                    <img src="./assets/images/placeholder1.jpeg" class="card-img-top" alt="..." 
-                        id="weatherDash-img">
-                    <div class="card-img-overlay custom-overlay" id="weatherDash-overlay"> <!-- add project title before overlay in id -->
+                    <img src="./assets/images/placeholder1.jpeg" class="card-img-top" alt="..." id="weatherDash-img">
+                    <div class="card-img-overlay custom-overlay" id="weatherDash-overlay">
+                        <!-- add project title before overlay in id -->
                         <h3 class="overlayHeader">Weather Dashboard</h3> <!-- project title -->
                         <p>Technologies Used</p> <!-- technologies used -->
                         <button type="button" class="btn custom-button-one  learn-more-btn" data-bs-toggle="modal"
-                            data-bs-target="#weatherDashModal" >learn more.</button> <!-- data-bs-target needs to match modal id  -->
+                            data-bs-target="#weatherDashModal">learn more.</button>
+                        <!-- data-bs-target needs to match modal id  -->
                     </div>
                     <div class="card-body" id="weatherDash-desc">
                         <p class="card-text">live weather forecast application.</p>
@@ -397,15 +414,16 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <img src=""
-                                alt="screenshot of deployed app" class="modalImg"> <!-- add image id -->
-                            <p>Project Description
+                            <img src="" alt="screenshot of deployed app" class="modalImg"> <!-- add image id -->
+                            <p class="longDesc">Project Description
                             </p>
-                            <p>Technologies Used</p>
-                            <button class="custom-button-one inner-modal-btn" id="weatherDash-github-modal-btn">github repo<span
-                                class="fas fa-chevron-right modal-btn-fa"></span></button>
-                        <button class="custom-button-one inner-modal-btn" id="weatherDash-deployed-modal-btn">deployed app<span
-                                class="fas fa-chevron-right modal-btn-fa"></span></button> <!-- id's are important for javascript-->
+                            <button class="custom-button-one inner-modal-btn" id="weatherDash-github-modal-btn">github
+                                repo<span class="fas fa-chevron-right modal-btn-fa"></span></button>
+                            <button class="custom-button-one inner-modal-btn"
+                                id="weatherDash-deployed-modal-btn">deployed app<span
+                                    class="fas fa-chevron-right modal-btn-fa"></span></button>
+                            <!-- id's are important for javascript-->
+                            <p class="longDesc">Technologies Used</p>
                         </div>
                     </div>
                 </div>
@@ -414,16 +432,18 @@
 
 
             <!--dayPlanner-->
-            <div class="col-sm-12 col-md-6 col-lg-3 portfolio-content" id="dayPlanner"> <!-- add project title to id -->
+            <div class="col-sm-12 col-md-6 col-lg-3 portfolio-content" id="dayPlanner">
+                <!-- add project title to id -->
                 <div class="card h-100 project">
                     <!-- add img source below -->
-                    <img src="./assets/images/placeholder3.jpeg" class="card-img-top" alt="..." 
-                        id="dayPlanner-img">
-                    <div class="card-img-overlay custom-overlay" id="dayPlanner-overlay"> <!-- add project title before overlay in id -->
+                    <img src="./assets/images/placeholder3.jpeg" class="card-img-top" alt="..." id="dayPlanner-img">
+                    <div class="card-img-overlay custom-overlay" id="dayPlanner-overlay">
+                        <!-- add project title before overlay in id -->
                         <h3 class="overlayHeader">Day Planner</h3> <!-- project title -->
                         <p>Technologies Used</p> <!-- technologies used -->
                         <button type="button" class="btn custom-button-one  learn-more-btn" data-bs-toggle="modal"
-                            data-bs-target="#dayPlannerModal" >learn more.</button> <!-- data-bs-target needs to match modal id  -->
+                            data-bs-target="#dayPlannerModal">learn more.</button>
+                        <!-- data-bs-target needs to match modal id  -->
                     </div>
                     <div class="card-body" id="dayPlanner-desc">
                         <p class="card-text">live weather forecast application.</p>
@@ -440,15 +460,16 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <img src="###3###"
-                                alt="screenshot of deployed app" class="modalImg"> 
-                            <p>Project Description
+                            <img src="###3###" alt="screenshot of deployed app" class="modalImg">
+                            <p class="longDesc">Project Description
                             </p>
-                            <p>Technologies Used</p>
-                            <button class="custom-button-one inner-modal-btn" id="dayPlanner-github-modal-btn">github repo<span
-                                class="fas fa-chevron-right modal-btn-fa"></span></button>
-                        <button class="custom-button-one inner-modal-btn" id="dayPlanner-deployed-modal-btn">deployed app<span
-                                class="fas fa-chevron-right modal-btn-fa"></span></button> <!-- id's are important for javascript-->
+                            <button class="custom-button-one inner-modal-btn" id="dayPlanner-github-modal-btn">github
+                                repo<span class="fas fa-chevron-right modal-btn-fa"></span></button>
+                            <button class="custom-button-one inner-modal-btn"
+                                id="dayPlanner-deployed-modal-btn">deployed app<span
+                                    class="fas fa-chevron-right modal-btn-fa"></span></button>
+                            <!-- id's are important for javascript-->
+                            <p class="longDesc">Technologies Used</p>
                         </div>
                     </div>
                 </div>
@@ -456,16 +477,18 @@
             <!-- /dayPlanner -->
 
             <!--jsQuiz-->
-            <div class="col-sm-12 col-md-6 col-lg-3 portfolio-content" id="jsQuiz"> <!-- add project title to id -->
+            <div class="col-sm-12 col-md-6 col-lg-3 portfolio-content" id="jsQuiz">
+                <!-- add project title to id -->
                 <div class="card h-100 project">
                     <!-- add img source below -->
-                    <img src="./assets/images/placeholder2.jpeg" class="card-img-top" alt="..." 
-                        id="jsQuiz-img">
-                    <div class="card-img-overlay custom-overlay" id="jsQuiz-overlay"> <!-- add project title before overlay in id -->
+                    <img src="./assets/images/placeholder2.jpeg" class="card-img-top" alt="..." id="jsQuiz-img">
+                    <div class="card-img-overlay custom-overlay" id="jsQuiz-overlay">
+                        <!-- add project title before overlay in id -->
                         <h3 class="overlayHeader">JavaScript Quiz</h3> <!-- project title -->
                         <p>Technologies Used</p> <!-- technologies used -->
                         <button type="button" class="btn custom-button-one  learn-more-btn" data-bs-toggle="modal"
-                            data-bs-target="#jsQuizModal" >learn more.</button> <!-- data-bs-target needs to match modal id  -->
+                            data-bs-target="#jsQuizModal">learn more.</button>
+                        <!-- data-bs-target needs to match modal id  -->
                     </div>
                     <div class="card-body" id="jsQuiz-desc">
                         <p class="card-text">live weather forecast application.</p>
@@ -473,8 +496,7 @@
                 </div>
             </div>
             <!--modal-->
-            <div class="modal fade" id="jsQuizModal" tabindex="-2" aria-labelledby="jsQuizLabel"
-                aria-hidden="true">
+            <div class="modal fade" id="jsQuizModal" tabindex="-2" aria-labelledby="jsQuizLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -482,15 +504,15 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <img src="###3###"
-                                alt="screenshot of deployed app" class="modalImg"> 
-                            <p>Project Description
+                            <img src="###3###" alt="screenshot of deployed app" class="modalImg">
+                            <p class="longDesc">Project Description
                             </p>
-                            <p>Technologies Used</p>
-                            <button class="custom-button-one inner-modal-btn" id="jsQuiz-github-modal-btn">github repo<span
-                                class="fas fa-chevron-right modal-btn-fa"></span></button>
-                        <button class="custom-button-one inner-modal-btn" id="jsQuiz-deployed-modal-btn">deployed app<span
-                                class="fas fa-chevron-right modal-btn-fa"></span></button> <!-- id's are important for javascript-->
+                            <button class="custom-button-one inner-modal-btn" id="jsQuiz-github-modal-btn">github
+                                repo<span class="fas fa-chevron-right modal-btn-fa"></span></button>
+                            <button class="custom-button-one inner-modal-btn" id="jsQuiz-deployed-modal-btn">deployed
+                                app<span class="fas fa-chevron-right modal-btn-fa"></span></button>
+                            <!-- id's are important for javascript-->
+                            <p class="longDesc">Technologies Used</p>
                         </div>
                     </div>
                 </div>
@@ -498,16 +520,19 @@
             <!-- /jsQuiz -->
 
             <!--passwordGenerator-->
-            <div class="col-sm-12 col-md-6 col-lg-3 portfolio-content" id="passwordGenerator"> <!-- add project title to id -->
+            <div class="col-sm-12 col-md-6 col-lg-3 portfolio-content" id="passwordGenerator">
+                <!-- add project title to id -->
                 <div class="card h-100 project">
                     <!-- add img source below -->
-                    <img src="./assets/images/placeholder2.jpeg" class="card-img-top" alt="..." 
+                    <img src="./assets/images/placeholder2.jpeg" class="card-img-top" alt="..."
                         id="passwordGenerator-img">
-                    <div class="card-img-overlay custom-overlay" id="passwordGenerator-overlay"> <!-- add project title before overlay in id -->
+                    <div class="card-img-overlay custom-overlay" id="passwordGenerator-overlay">
+                        <!-- add project title before overlay in id -->
                         <h3 class="overlayHeader">Project Title</h3> <!-- project title -->
                         <p>Technologies Used</p> <!-- technologies used -->
                         <button type="button" class="btn custom-button-one  learn-more-btn" data-bs-toggle="modal"
-                            data-bs-target="#passwordGeneratorModal" >learn more.</button> <!-- data-bs-target needs to match modal id  -->
+                            data-bs-target="#passwordGeneratorModal">learn more.</button>
+                        <!-- data-bs-target needs to match modal id  -->
                     </div>
                     <div class="card-body" id="passwordGenerator-desc">
                         <p class="card-text">live weather forecast application.</p>
@@ -524,15 +549,17 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <img src="###3###"
-                                alt="screenshot of deployed app" class="modalImg"> 
-                            <p>Project Description
+                            <img src="###3###" alt="screenshot of deployed app" class="modalImg">
+                            <p class="longDesc">Project Description
                             </p>
-                            <p>Technologies Used</p>
-                            <button class="custom-button-one inner-modal-btn" id="passwordGenerator-github-modal-btn">github repo<span
-                                class="fas fa-chevron-right modal-btn-fa"></span></button>
-                        <button class="custom-button-one inner-modal-btn" id="passwordGenerator-deployed-modal-btn">deployed app<span
-                                class="fas fa-chevron-right modal-btn-fa"></span></button> <!-- id's are important for javascript-->
+                            <button class="custom-button-one inner-modal-btn"
+                                id="passwordGenerator-github-modal-btn">github repo<span
+                                    class="fas fa-chevron-right modal-btn-fa"></span></button>
+                            <button class="custom-button-one inner-modal-btn"
+                                id="passwordGenerator-deployed-modal-btn">deployed app<span
+                                    class="fas fa-chevron-right modal-btn-fa"></span></button>
+                            <!-- id's are important for javascript-->
+                            <p class="longDesc">Technologies Used</p>
                         </div>
                     </div>
                 </div>
@@ -542,7 +569,8 @@
             <div class="row justify-content-center text-center contact-me">
                 <div class="col-12 contact-btn-cont">
                     <h3>Feel like getting in touch?</h3>
-                    <button class="custom-button-one" id="contact-btn">Contact Me<span class="fas fa-chevron-right contact-fa"></span></button>
+                    <button class="custom-button-one" id="contact-btn">Contact Me<span
+                            class="fas fa-chevron-right contact-fa"></span></button>
                 </div>
             </div>
     </main>

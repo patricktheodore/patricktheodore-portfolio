@@ -298,6 +298,14 @@ body {
     padding: 0.5rem 0rem 0.5rem 2.5rem;
 }
 
+.techs {
+    font-size: 0.875rem;
+    margin-top: 1rem;
+}
+
+.longDesc {
+    margin: 2rem 0
+}
 
  /**/
 
