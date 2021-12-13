@@ -13,11 +13,11 @@ const dayPlannerGitBtn = $('#dayPlanner-github-modal-btn');
 const dayPlannerAppBtn = $('#dayPlanner-deployed-modal-btn');
 
 dayPlannerGitBtn.on('click', function() {
-    window.open('https://github.com/patricktheodore/work-day-scheduler', '_blank')
+    window.open('https://github.com/patricktheodore/note-taker', '_blank')
 });
 
 dayPlannerAppBtn.on('click', function() {
-    window.open('https://patricktheodore.github.io/work-day-scheduler/', '_blank')
+    window.open('https://immense-plains-46535.herokuapp.com/', '_blank')
 });
 
 const jsQuizGitBtn = $('#jsQuiz-github-modal-btn'); 
